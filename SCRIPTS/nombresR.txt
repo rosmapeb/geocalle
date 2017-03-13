@@ -1,0 +1,248 @@
+library(Hmisc)
+library(Rcmdr)
+setwd("C:/CartoMaestria/Ejercicio/DENUE")
+itable <- read.csv("denue filter.csv")
+nombres <- read.csv("names.csv")
+output <- matrix(unlist(itable), nrow=5, ncol = 588, byrow = FALSE)
+n<-nombres$nombre
+anillos<-c("1","2","3","4","5")
+
+for (i in 1:length(n))
+{
+  print i
+  data <- output[,i]
+  plot(anillos,data,type= 'l')
+  title(n[i])
+}
+
+
+
+
+
+
+
+
+POB_1 : Población total (POB1)     -                          POB1-Poblacion_total
+--------------------------------------------------------------------
+POB_38 : Población femenina de 0 a 14 años (POB_38)     -     POB38-Poblacion_femenina_de_0_a_14
+--------------------------------------------------------------------
+POB_41 : Población femenina de 15 a 29 años (POB_41)     -     POB41-Poblacion_femenina_de_15_a_29
+--------------------------------------------------------------------
+POB_45 : Población femenina de 30 a 49 años (POB_45)     -     POB45-Poblacion_femenina_de_30_a_49
+--------------------------------------------------------------------
+POB4647 : Población femenina de 50 a 64 años (POB4647)     -     POB4647-Poblacion_femenina_de_50_a_64
+--------------------------------------------------------------------
+POB_55 : Población femenina de 65 años y más (POB_55)     -     POB55-Poblacion_femenina_de_65
+--------------------------------------------------------------------
+POB_64 : Población masculina de 0 a 14 años (POB_64)     -    
+POB64-Poblacion_masculina_de_0_a_14
+--------------------------------------------------------------------
+POB_67 : Población masculina de 15 a 29 años (POB_67)     -    
+POB67-Poblacion_masculina_de_15_a_29
+--------------------------------------------------------------------
+POB_70 : Población masculina de 30 a 49 años (POB_70)     -    
+POB70-Poblacion_masculina_de_30_a_49
+--------------------------------------------------------------------
+POB7172 : Población masculina de 50 a 64 años (POB7172)     -    
+POB7172-Poblacion_masculina_de_50_a_64
+--------------------------------------------------------------------
+POB_80 : Población masculina de 65 años y más (POB_80)     -     
+POB80-Poblacion_masculina_de_65
+--------------------------------------------------------------------
+
+ECO2 : Poblacion_femenina_economicamente_activa_(ECO2)
+--------------------------------------------------------------------
+
+ECO3 : Poblacion_masculina_economicamente_activa__(ECO3)
+--------------------------------------------------------------------
+
+ECO5 : Poblacion_femenina_ocupada__(ECO5)
+--------------------------------------------------------------------
+
+ECO6 : Poblacion_masculina_ocupada__(ECO6)
+--------------------------------------------------------------------
+
+ECO7 : Poblacion_ocupada_de_12_años_y_más_sin_escolaridad__(ECO7)
+--------------------------------------------------------------------
+
+ECO10 : Poblacion_ocupada_de_12_años_y_más_con_al_menos_un_grado_aprobado_en_primaria__(ECO10)
+--------------------------------------------------------------------
+
+ECO13 : Poblacion_ocupada_de_12_años_y_más_con_secundaria_o_equivalente_incompleta__(ECO13)
+--------------------------------------------------------------------
+
+ECO16 : Poblacion_ocupada_de_12_años_y_más_con_secundaria_o_equivalente_completa__(ECO16)
+--------------------------------------------------------------------
+
+ECO19 : Poblacion_ocupada_de_12_años_y_más_con_al_menos_un_grado_aprobado_en_educacion_media_superior__(ECO19)
+--------------------------------------------------------------------
+
+ECO22 : Poblacion_ocupada_de_12_años_y_más_con_al_menos_un_grado_aprobado_en_educacion_superior_o_posgrado__(ECO22)
+--------------------------------------------------------------------
+
+ECO26 : Poblacion_femenina_desocupada__(ECO26)
+--------------------------------------------------------------------
+
+ECO27 : Poblacion_masculina_desocupada_(ECO27)
+--------------------------------------------------------------------
+
+ECO29 : Poblacion_femenina_no_economicamente_activa_(ECO29)
+--------------------------------------------------------------------
+
+ECO30 : Poblacion_masculina_no_economicamente_activa_(ECO30)
+--------------------------------------------------------------------
+
+ECO31 : Poblacion_de_12_años_y_más_no_economicamente_activa_pensionada_o_jubilada_(ECO31)
+--------------------------------------------------------------------
+
+ECO34 : Poblacion_de_12_años_y_más_no_economicamente_activa_que_se_dedica_a_estudiar_(ECO34)
+--------------------------------------------------------------------
+
+ECO37 : Poblacion_de_12_años_y_más_no_economicamente_activa_que_se_dedica_a_los_quehaceres_del_hogar_(ECO37)
+--------------------------------------------------------------------
+
+ECO40 : Poblacion_de_12_años_y_más_no_economicamente_activa_que_tiene_alguna_limitacion_física_o_mental_permanente_que_le_impide_trabajar_(ECO40)
+--------------------------------------------------------------------
+
+ECO43 : Poblacion_de_12_años_y_más_no_economicamente_activa_que_tiene_otra_razon_que_le_impide_trabajar_(ECO43)
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+EDU1713 : Población de 3 a 14 años que asiste a la escuela
+--------------------------------------------------------------------
+
+EDU41016 : Población de 3 a 14 años que no asiste a la escuela
+--------------------------------------------------------------------
+
+EDU25 : Población de 15 años y más alfabeta
+--------------------------------------------------------------------
+
+EDU28 : Población de 15 años y más analfabeta
+--------------------------------------------------------------------
+
+EDU31 : Población de 15 años y más sin escolaridad
+--------------------------------------------------------------------
+
+EDU34 : Población de 15 años y más con educación básica incompleta
+--------------------------------------------------------------------
+
+EDU37 : Población de 15 años y más con educación básica completa.
+--------------------------------------------------------------------
+
+EDU40 : Población de 15 años y más con educación pos-básica.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+DISC2 : Población femenina con discapacidad
+--------------------------------------------------------------------
+
+DISC3 : Población masculina con discapacidad
+--------------------------------------------------------------------
+
+DISC4 : Población de 0 a 14 años con discapacidad
+--------------------------------------------------------------------
+
+DISC5 : Población de 15 a 59 años con discapacidad
+--------------------------------------------------------------------
+
+DISC6 : Población de 60 años y mßs con discapacidad
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+HOGAR2 : Hogares censales con jefatura femenina
+--------------------------------------------------------------------
+
+HOGAR3 : Hogares censales con jefatura masculina
+--------------------------------------------------------------------
+
+HOGAR7 : Hogares censales con jefa (e) menor de 30 años
+--------------------------------------------------------------------
+
+HOGAR13 : Hogares censales con jefa (e) de 30 a 59 años
+--------------------------------------------------------------------
+
+HOGAR19 : Hogares censales con jefa (e) de 60 años y mas
+--------------------------------------------------------------------
+
+HOGAR25 : Hogares censales nucleares conformados por la jefa con hijos menores de 18 años
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+INDI19 : Hogares censales indígenas
+--------------------------------------------------------------------
+
+INDI20 : Población en hogares censales indígenas
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+MIG2 : Población femenina nacida en la entidad
+--------------------------------------------------------------------
+
+MIG3 : Población masculina nacida en la entidad
+--------------------------------------------------------------------
+
+MIG5 : Población femenina nacida en otra entidad
+--------------------------------------------------------------------
+
+MIG6 : Población masculina nacida en otra entidad
+--------------------------------------------------------------------
+
+MIG7 : Población nacida en otro país
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+RELIG1 : Población con religión católica
+--------------------------------------------------------------------
+
+RELIG2 : Protestantes, Evangélicas y Bíblicas diferentes de evangélicas
+--------------------------------------------------------------------
+
+RELIG3 : Población con otras religiones diferentes a las anteriores
+--------------------------------------------------------------------
+
+RELIG4 : Población sin religión
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+SALUD1 : Población derechohabiente a servicios de salud
+--------------------------------------------------------------------
+
+SALUD2 : Población sin derechohabiencia a servicios de salud
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+SCONY1 : Población soltera o nunca unida de 12 años y mas
+--------------------------------------------------------------------
+
+SCONY4 : Población casada o unida de 12 años y mas
+--------------------------------------------------------------------
+
+SCONY7 : Población que estuvo casada o unida de 12 años y mas
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+VIV0 : Total de viviendas
+--------------------------------------------------------------------
+
+VIV1 : Total de viviendas habitadas
+--------------------------------------------------------------------
+
+VIV2 : Viviendas particulares habitadas
+
