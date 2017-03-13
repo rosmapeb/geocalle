@@ -31,7 +31,7 @@ for i in lstFiles:
   opciones = {'CHCM_SCINCE2010Poblacion_UTM.shp': ['POB_1','POB_38','POB_41','POB_45','POB_46','POB_47','POB_55','POB_64','POB_67','POB_70','POB_71','POB_72','POB_80'],'CHCM_SCINCE2010Economia_UTM.shp':['ECO2','ECO3','ECO5','ECO6','ECO7','ECO10','ECO13','ECO16','ECO19','ECO22','ECO26','ECO27','ECO29','ECO30','ECO31','ECO34','ECO37','ECO40','ECO43'],'CHCM_SCINCE2010Educacion_UTM.shp': ['EDU1','EDU7','EDU13','EDU4','EDU10','EDU16','EDU25','EDU28','EDU31','EDU34','EDU37','EDU40','EDU49_R','EDU50_R','EDU51_R'],'CHCM_SCINCE2010Discapacida_UTM.shp':['DISC2','DISC3','DISC4','DISC5','DISC6'], 'CHCM_SCINCE2010HogaresCensales_UTM.shp':['HOGAR2','HOGAR3','HOGAR7','HOGAR13','HOGAR19','HOGAR25'],'CHCM_SCINCE2010LenIndigena_UTM.shp': ['INDI1','INDI4','INDI7','INDI10','INDI13','INDI16','INDI19','INDI20'],'CHCM_SCINCE2010Migracion_UTM.shp':['MIG2','MIG3','MIG5','MIG6','MIG7'],'CHCM_SCINCE2010Religion_UTM.shp':['RELIG1','RELIG2','RELIG3','RELIG4'],'CHCM_SCINCE2010Salud_UTM.shp':['SALUD1','SALUD2'],'CHCM_SCINCE2010SitConyugal_UTM.shp':['SCONY1','SCONY4','SCONY7'],'CHCM_SCINCE2010Vivienda_UTM.shp':['VIV0','VIV1','VIV2']}
   #opciones = {'CHCM_SCINCE2010Educacion_UTM.shp': ['EDU49_R','EDU50_R','EDU51_R'],'CHCM_SCINCE2010LenIndigena_UTM.shp': ['INDI1','INDI4','INDI7','INDI10','INDI13','INDI16']}
   #directory= 'C:\CartoMaestria\Ejercicio\CaracterizacionPMA\A_gral\C\Cen' + join_table
-  #print(directory)
+
   try:
     fields=opciones[join_table]
     print (fields)
