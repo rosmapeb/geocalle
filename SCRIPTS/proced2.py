@@ -36,10 +36,7 @@ for i in lstFiles:
     fields=opciones[join_table]
     print (fields)
     print('-----------')
-    #print(in_data)
-    #print(in_field)
-    #print(join_field)
-    #print('-----------')
+
     arcpy.JoinField_management (in_data, in_field, join_table, join_field, fields)
     #arcpy.CopyFeatures_management(joinprov,directory)
   except:
