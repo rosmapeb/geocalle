@@ -2,6 +2,7 @@ import os
 import arcpy
 from arcpy import env
 
+# estos paths hay que hacerlos relativos
 path = 'C:\CartoMaestria\Ejercicio\CaracterizacionPMA\SCINCE2010i' #Establece un directorio
 lstFiles = []
 lstDir = os.walk(path)   #Enlista los archivos del directorio path
