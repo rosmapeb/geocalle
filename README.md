@@ -1,4 +1,6 @@
-# geocalle
-Modelo socioespacial de la población sin hogar en el Centro Histórico de la Ciudad de México.
+# GeoCalle
 
-Este es mi proyecto de tesis de maestría.
+Modelo socioespacial de la población sin hogar en el Centro Histórico
+de la Ciudad de México.
+
+[Página web del Repositorio](http://rosmapeb.github.io/geocalle)
