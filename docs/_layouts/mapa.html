@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+<div id="map" class="map"></div>
+<script>
+
+      var styles = {
+      };
+
+      var styleFunction = function(feature) {
+        return styles[feature.getGeometry().getType()];
+      };
+
+
+
+      var vectorSource = new ol.source.Vector({
+      format: new ol.format.GeoJSON(),
+      url: '{{ page.mapurl }}'
+      });
+
+
+      var vectorLayer = new ol.layer.Vector({
+        source: vectorSource,
+        style: styleFunction
+      });
+
+      var map = new ol.Map({
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }),
+          vectorLayer
+        ],
+        target: 'map',
+        controls: ol.control.defaults({
+          attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
+            collapsible: false
+          })
+        }),
+      view: new ol.View({
+      center: ol.proj.fromLonLat([{{ page.lon }}, {{ page.lat }}]),
+      zoom: {{ page.zoom }}
+        })
+      });
+
+</script>
+  
+</article>
