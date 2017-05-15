@@ -33,23 +33,11 @@ layout: default
         style: styleFunction
       });
 
+      //CARGA DE OSM
       var map = new ol.Map({
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          }),
-          vectorLayer
-        ],
         target: 'map',
-        controls: ol.control.defaults({
-          attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
-            collapsible: false
-          })
-        }),
-      view: new ol.View({
-      center: ol.proj.fromLonLat([{{ page.lon }}, {{ page.lat }}]),
-      zoom: {{ page.zoom }}
-        })
+        layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
+        view: new ol.View({center: ol.proj.fromLonLat([-99.13, 19.43]), zoom: 15})
       });
   
       //Declaracion de dirección de url
