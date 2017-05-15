@@ -53,7 +53,7 @@ layout: default
       });
   
       //Declaracion de dirección de url
-      var urlmagicos= 'data/magicos.geojson';
+      var urlmagicos= 'https://github.com/rosmapeb/geocalle/blob/master/data/magicos.geojson';
       //Declaracion de Capa GeoJson dentro de interfaz
       var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
       //Agrega GeoJSON a OSM
