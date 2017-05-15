@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "ID": 1, "Tipo": "Plazas", "Lugar": "Plaza Garibaldi" }, "geometry": { "type": "Point", "coordinates": [ -99.139488, 19.440603 ] } },
+{ "type": "Feature", "properties": { "ID": 2, "Tipo": "Museos", "Lugar": "Museo del Tequila y el Mezcal" }, "geometry": { "type": "Point", "coordinates": [ -99.139854, 19.440565 ] } },
+{ "type": "Feature", "properties": { "ID": 3, "Tipo": "Plazas", "Lugar": "Paseo de las Luminarias" }, "geometry": { "type": "Point", "coordinates": [ -99.13842, 19.440807 ] } },
+{ "type": "Feature", "properties": { "ID": 4, "Tipo": "Mercados", "Lugar": "Mercado San Camilito" }, "geometry": { "type": "Point", "coordinates": [ -99.139168, 19.440916 ] } },
+{ "type": "Feature", "properties": { "ID": 5, "Tipo": "Museos", "Lugar": "Museo Memoria y Tolerancia" }, "geometry": { "type": "Point", "coordinates": [ -99.144356, 19.434652 ] } },
+{ "type": "Feature", "properties": { "ID": 6, "Tipo": "Museos", "Lugar": "Museo Franz Mayer" }, "geometry": { "type": "Point", "coordinates": [ -99.143219, 19.43688 ] } },
+{ "type": "Feature", "properties": { "ID": 7, "Tipo": "Museos", "Lugar": "Museo Nacional de Arte" }, "geometry": { "type": "Point", "coordinates": [ -99.139519, 19.436106 ] } },
+{ "type": "Feature", "properties": { "ID": 8, "Tipo": "Plazas", "Lugar": "Alameda Central" }, "geometry": { "type": "Point", "coordinates": [ -99.144028, 19.435713 ] } },
+{ "type": "Feature", "properties": { "ID": 9, "Tipo": "Teatros", "Lugar": "Palacio de Bellas Artes" }, "geometry": { "type": "Point", "coordinates": [ -99.141357, 19.434801 ] } },
+{ "type": "Feature", "properties": { "ID": 10, "Tipo": "Museos", "Lugar": "Museo Nacional de Arquitectura" }, "geometry": { "type": "Point", "coordinates": [ -99.141106, 19.435322 ] } },
+{ "type": "Feature", "properties": { "ID": 11, "Tipo": "Museos", "Lugar": "Museo Nacional de la Estampa (MUNAE)" }, "geometry": { "type": "Point", "coordinates": [ -99.142784, 19.436794 ] } },
+{ "type": "Feature", "properties": { "ID": 12, "Tipo": "Teatros", "Lugar": "Teatro Hidalgo" }, "geometry": { "type": "Point", "coordinates": [ -99.141693, 19.436609 ] } },
+{ "type": "Feature", "properties": { "ID": 13, "Tipo": "Teatros", "Lugar": "Teatro Blanquita" }, "geometry": { "type": "Point", "coordinates": [ -99.140343, 19.438446 ] } },
+{ "type": "Feature", "properties": { "ID": 14, "Tipo": "Plazas", "Lugar": "Plaza Romita" }, "geometry": { "type": "Point", "coordinates": [ -99.155266, 19.423241 ] } },
+{ "type": "Feature", "properties": { "ID": 15, "Tipo": "Iglesias", "Lugar": "Templo de Santa María Natividad" }, "geometry": { "type": "Point", "coordinates": [ -99.155327, 19.423069 ] } },
+{ "type": "Feature", "properties": { "ID": 16, "Tipo": "Mercados", "Lugar": "Mercado de la Merced (Nave Mayor)" }, "geometry": { "type": "Point", "coordinates": [ -99.123978, 19.426167 ] } },
+{ "type": "Feature", "properties": { "ID": 17, "Tipo": "Mercados", "Lugar": "Mercado de la Merced (Nave Menor)" }, "geometry": { "type": "Point", "coordinates": [ -99.122772, 19.425518 ] } },
+{ "type": "Feature", "properties": { "ID": 18, "Tipo": "Mercados", "Lugar": "Mercado de Flores" }, "geometry": { "type": "Point", "coordinates": [ -99.125099, 19.42486 ] } },
+{ "type": "Feature", "properties": { "ID": 20, "Tipo": "Mercados", "Lugar": "Mercado de la Merced (Mercado de Dulces)" }, "geometry": { "type": "Point", "coordinates": [ -99.125046, 19.427704 ] } },
+{ "type": "Feature", "properties": { "ID": 21, "Tipo": "Plazas", "Lugar": "Plaza Alonso García Bravo" }, "geometry": { "type": "Point", "coordinates": [ -99.127953, 19.430065 ] } },
+{ "type": "Feature", "properties": { "ID": 22, "Tipo": "Museos", "Lugar": "Claustro del Convento de la Merced" }, "geometry": { "type": "Point", "coordinates": [ -99.127777, 19.429474 ] } },
+{ "type": "Feature", "properties": { "ID": 23, "Tipo": "Centro Cultural", "Lugar": "Casa Talavera" }, "geometry": { "type": "Point", "coordinates": [ -99.127579, 19.428226 ] } },
+{ "type": "Feature", "properties": { "ID": 24, "Tipo": "Plazas", "Lugar": "Plaza del Aguilita" }, "geometry": { "type": "Point", "coordinates": [ -99.127777, 19.427231 ] } }
+]
+}
