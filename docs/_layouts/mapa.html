@@ -1,57 +1,44 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 400px;
-        width: 100%;
-      }
-      .ficha {color: #D92665;}
-    </style>
-    <script src="https://openlayers.org/en/v4.1.1/build/ol.js" type="text/javascript"></script>
-    <title>OpenLayers example</title>
-  </head>
-  <body>
-    <h2>My Map</h2>
-    <div id="map" class="map"></div>
-    <script type="text/javascript">
-      
-//~~~~~~~~~~~~~~CARGA DE DATOS~~~~~~~~~~~~~~~
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+<div id="map" class="map"></div>
+<script>
+      var styles = {
+      };
+      var styleFunction = function(feature) {
+        return styles[feature.getGeometry().getType()];
+      };
+      var vectorSource = new ol.source.Vector({
+      format: new ol.format.GeoJSON(),
+      url: '{{ page.mapurl }}'
+      });
+      var vectorLayer = new ol.layer.Vector({
+        source: vectorSource,
+        style: styleFunction
+      });
       //CARGA DE OSM
       var map = new ol.Map({
         target: 'map',
         layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
         view: new ol.View({center: ol.proj.fromLonLat([-99.13, 19.43]), zoom: 15})
       });
-      //CARGA DE GEOJSON
+  
       //Declaracion de dirección de url
-//~~~~~~~~~~~~~~ESTILOS~~~~~~~~~~~~~~~
-      var styles = {
-          'Point': new ol.style.Style({
-            color: 'green'
-          })
-      };
-      var styleFunction = function(feature){
-          return styles[feature.getGeometry().getType()];
-      };
-//~~~~~~~~~~~~~~FUNCIONALIDAD~~~~~~~~~~~~~~~
-      var selection = new ol.interaction.Select();
-      map.addInteraction(selection);
-      selection.on('select',function(e){
-                var div=document.getElementById('selection');
-                var seleccionados= e.target.getFeatures();
-                var html='';
-                seleccionados.forEach(function(t){
-                  html += '<div class="ficha"><ul>';
-                  html += '<li><strong>Lugar</strong>: ' + t.get('ID') + '</li>';
-                  html += '<li><strong>Magnitud</strong>: ' + t.get('Tipo') + '</li>';
-                  html += '</ul></div>';
-                  //"ID:" + t.get('ID'); //+ ' | Tipo: <strong>' + t.get('Tipo') + </strong>; 
-                  //html += '<hr/>'; 
-                });
-                div.innerHTML=html;
-      });
-    </script>
-  </body>
-</html>
+      var urlmagicos= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/magicos.geojson';
+      //Declaracion de Capa GeoJson dentro de interfaz
+      var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
+      //Agrega GeoJSON a OSM
+      map.addLayer(capamagicos);
+  
+</script>
+  
+</article>
