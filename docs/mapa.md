@@ -7,4 +7,4 @@ lat: 19.4321
 zoom: 15
 ---
 
-Earum vel ut iste cumque facere ad sit iure. Nihil facere nemo ea tempore quibusdam. Aut necessitatibus quia iure voluptas doloremque temporibus ut. Nam occaecati et tempore accusamus laboriosam nisi.
+Las personas en situación de calle son constructores espaciales en el ámbito de la informalidad. En este contexto, construyen espacios denominados "Enclaves Temporales Urbanos" provenientes de la Escala Microlocal según Michael Paccione (2009) y Edward Soja (2012)
