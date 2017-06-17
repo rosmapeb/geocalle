@@ -3,7 +3,7 @@ layout: page
 title: Acerca de
 permalink: /acerca_de/
 ---
-#Introducción
+# Introducción
 
 La situación de calle es una representación social clara/inefable de la exclusión [física, social y económica] y pobreza extrema originada por el sistema económico actual. Debido a que el estilo de vida que desarrolla se sustenta en un ciclo interminable de carencias y pérdidas, dicha población carece de la capacidad de proveerse de los recursos necesarios para la satisfacción de sus patrones biológicos así como de sus necesidades inmediatas (Ortega y Gasset, ; Peralta, 2014: )
 
