@@ -4,22 +4,36 @@ title: Acerca de
 permalink: /acerca_de/
 ---
 # Introducción
+La situación de calle es una representación social de la exclusión y pobreza extrema que se caracteriza por la inestabilidad y ciclos constantes de privaciones, lo que se traduce en la pérdida gradual de la capacidad de proveerse de recursos necesarios para la satisfacción de sus patrones biológicos y necesidades inmediatas.
+En este ámbito, la privación más representativa de la situación es la carencia de un hogar , la cual determina que la población viva a la intemperie, por lo que todas las actividades deben realizarse en el espacio público , lo cual es percibido subjetivamente por la sociedad de manera tal que se desvincula al fenómeno de su dimensión espacial y desvirtúa su presencia en el espacio.
+Sin embargo la realidad es distinta. Las personas en situación de calle (PSC) construyen territorialidades alternas, donde el entramado urbano es la única fuente de recursos, de forma que se construyen patrones territoriales distintos a los establecidos por el capital y se encaminan hacia la lógica de la supervivencia, lo cual conforma un comportamiento complejo que hasta el momento es poco conocido 
+Debido a ello, el tipo de pobreza que ejerce la población no puede registrarse con los mecanismos de obtención de datos habituales y los instrumentos especializados no han integrado la dimensión espacial a sus perfiles metodológicos, lo cual implica una barrera para el estudio geográfico de la situación de calle.
+Bajo este panorama nace GeoCalle, plataforma colaborativa web de datos espaciales de PSC. Este desarrollo es el resultado del esfuerzo individual de los autores, por lo que no cuenta con apoyo institucional pero pretende ofrecer una propuesta para solucionar el déficit de información espacial del fenómeno. Debido ello, el proyecto se basa en el enfoque participativo de la cartografía.
+La Cartografía Participativa es un método que permite obtener representaciones cartográficas de la percepción colectiva del entorno geográfico localizado dentro de un territorio específico. Esto se logra a través de la instrucción cartográfica de miembros de comunidades suscritas a ese espacio, quienes a través de estos recursos, buscan reafirmación y empoderamiento espacial, ya sea por conflictos, gestión social, sostenibilidad o memoria y experiencia de los pueblos  
+(Mora y Jaramillo, 2003 : 3).
 
-La situación de calle es una representación social de la exclusión y pobreza extrema, originada por el sistema económico actual. Debido a que esta situación desarrolla un estilo de vida sustentado en la inestabilidad y en incesantes ciclos pérdidas, la población pierde gradualmente la capacidad de proveerse de recursos necesarios para la satisfacción de sus patrones biológicos y necesidades inmediatas (Ortega y Gasset, ; Peralta, 2014:).
+Y que buscan un medio de empoderamiento territorial ya que han entrado en conflicto con intereses gobiento y rpivado por el espacio
+Al surgir conflictos con intereses económicos externos
+quenes se ven forzados a recurrir a estas herramientas para empoderarse porque han entrado en 
+en su mayoría han entrado en conflicto con otras institución respecto al derecho y gestión delterritorio
+habitantes del  territorio quienes han entrado en conflicto al proclamar el espacio como su pertenencia
+o bien pretendern concientizar o llegar a una realidad colectiva para entender la realidad del espacio
 
-En este contexto, la privación más representativa de la situación es la carencia de un hogar , la cual determina que la población vivirá en espacios externos y que por lo tanto todas las actividades que realice las ejecutará en el espacio público (institucional y no institucional), lógica espacial poco conocida hasta el momento.
+Que una comunidad determinada para ejercer su derecho sobre el territorio, esto ha sido inspirado principalmente cuando las comunidades entran en conflicto por territorio
+A fin de demostrar su propiedad … valia
+Con la intervención de 
 
-Debido a lo anterior, socialmente el fenómeno se relaciona con la subjetividad y malestar, que desvincula a las personas de su dimensión espacial y desvirtúa su presencia en el espacio. Sin embargo, la realidad es distinta, ya que las personas construyen territorialidades alternas, donde el entramado urbano se convierte en la única fuente de adquisición de recursos, de forma que se construyen patrones territoriales distintos a los que rige el capital pero que se encaminan más a la supervivencia
+Pretende concientizar…
+aporte
+” de los elementos que conforman un territorio específico
+“memoria individual y colectiva” de las personas pertenecientes a un territorio específico ( Mora y Jaramillo, 2003 : 10)
+tiene su origen en el interés de recobrar … y esto se obtiene a través de  
 
-[Es así que, socialmente el fenómeno se relaciona en mayor grado con la subjetividad y malestar social, que desvincula a las personas de su dimensión espacial y desvirtúa su presencia en el espacio. Pese a este panorama la realidad para estas poblaciones es distinta , ya que es en el espacio público donde construyen territorialidades alternas y el entramado urbano se convierte en la única fuente de adquisición de recursos y satisfactores que construyen patrones territoriales distintos a los que rige el capital y se encaminan a su supervivencia(Peralta)]
+La construcción colectiva de la realidad en un territorio dado 
 
-Debido a esta última característica el tipo de pobreza que ejercen se vuelve inregistrable  dado que hasta el momento ninguna organización cuenta con una metodología fehaciente que sea capaz de comprender a ciencia cierta como es que viven perciben y conciben el espacio
-
-•	Es en este ámbito donde nace el proyecto GeoCalle
-•	Es en este ámbito donde intervienen la cartografía participativa
+La percepción que las personas tienen de los elementos que conforman unterritorio específico
 
 
-•	Es aquí donde verdaderamente se desconoce de como es que utilizan el espacio público, como se lo apropian o bien como lo construyen  dado que es informal este proceos espacial y dado que se consideran (soja}) los organismos no cuentan con un método que les prmita recoger datos dada esta condición de vida dada [existen algunos indicions preliminares pero pertenecen a la cartografía estática]
 •	Es aquí donde intervienen la carto participativa … marco conetpual de que es
 •	Pero como se va a hacer si a ellos su necesidad mas urgente no es emporderar si no sobrevivir? 
 •	Pues a parit de las ONG’s
@@ -30,6 +44,9 @@ Debido a esta última característica el tipo de pobreza que ejercen se vuelve i
 •	En este contexto, la característica mas visible de este grupo es la inaccesibilidad a un hogar, la cual es la base de una serie de imposibilidades hacia recursos
 CONCEPTOS CLAVE: Incapacidad de comprender el espacio
 
+  “vivienda adecuada en la que una persona … ejerce una posesión exclusiva capaz de mantener privacidad y disfrutar relaciones dentro de un marco legal de ocupación” (Edgar, Meert y Doherty, 2004: 5)
+ Institucional y no institucional
+  En la tesis de licenciatura “” , se realiza una interpretación exploratoria de dicha lógica, la cual se explica con base actividades vitales. Este trabajo ha sido publicado recientemente por EDNICA I.A.P. en colaboración con el Gobierno de la Ciudad de México (Peralta, 2016: )
 
 # Cartografía Participativa
 
@@ -71,6 +88,17 @@ El caso del uso de herramientas SIG en
 
 La pugna de las poblaciones en situación de calle es contra el Estado,
 contra las políticas económicas del Estado
+
+
+
+http://manueldelgadoruiz.blogspot.mx/2015/02/diferencia-entre-espacio-vivido-espacio.html
+Henri Lefebvre hace propia esa división tripartita del espacio en La producción del espacio (Capitan Swing). El espacio percibido es para él la práctica del espacio; el vivido, sería el espacio de representación, y el concebido, lo que llama representación del espacio. La explicación la tienes entre las páginas 91 y 114 de la edición de Capitán Swing de La producción del espacio. Creo que esa aplicación de la triada la que nos interesa más en relación con las cosas que hacemos.
+
+La práctica espacial se corresponde con el espacio percibido, el más cercano a la vida cotidiana y a los usos más prosaicos, los lugares y conjuntos espaciales propios de cada formación social, escenario en que cada ser humano desarrolla sus competencias como ser social que se sitúa en un determinado tiempo y lugar. Son las prácticas espaciales las que segregan el espacio que practican y hacen de él espacio social. En el contexto de una ciudad, la práctica espacial remite a lo que ocurre en las calles y en las plazas, los usos que estas reciben por parte de habitantes y viandantes.
+
+Por su parte, los espacios de representación son los espacios vividos, los que envuelven los espacios físicos y les sobreponen sistemas simbólicos complejos que lo codifican y los convierten en albergue de imágenes e imaginarios. Es espacio también de usuarios y habitantes, por supuesto, pero es propio de artistas, escritores y filósofos que creen sólo describirlo. En los espacios de representación puede encontrar uno expresiones de sumisión a códigos impuestos desde los poderes, pero también las expresiones del lado clandestino o subterráneo de la vida social. Es el espacio cualitativo de los sometimientos a las representaciones dominantes del espacio, pero también en el que beben y se inspiran deserciones y desobediencias. En este caso es un espacio no percibido, pero que pugna por serlo de un modo u otro.
+
+
 
 
 
