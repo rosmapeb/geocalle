@@ -5,12 +5,15 @@ permalink: /acerca_de/
 ---
 # Introducción
 La situación de calle es una representación social de la exclusión y pobreza extrema que se caracteriza por la inestabilidad y ciclos constantes de privaciones, lo que se traduce en la pérdida gradual de la capacidad de proveerse de recursos necesarios para la satisfacción de sus patrones biológicos y necesidades inmediatas.
+
 En este ámbito, la privación más representativa de la situación es la carencia de un hogar , la cual determina que la población viva a la intemperie, por lo que todas las actividades deben realizarse en el espacio público , lo cual es percibido subjetivamente por la sociedad de manera tal que se desvincula al fenómeno de su dimensión espacial y desvirtúa su presencia en el espacio.
+
 Sin embargo la realidad es distinta. Las personas en situación de calle (PSC) construyen territorialidades alternas, donde el entramado urbano es la única fuente de recursos, de forma que se construyen patrones territoriales distintos a los establecidos por el capital y se encaminan hacia la lógica de la supervivencia, lo cual conforma un comportamiento complejo que hasta el momento es poco conocido 
 Debido a ello, el tipo de pobreza que ejerce la población no puede registrarse con los mecanismos de obtención de datos habituales y los instrumentos especializados no han integrado la dimensión espacial a sus perfiles metodológicos, lo cual implica una barrera para el estudio geográfico de la situación de calle.
+
 Bajo este panorama nace GeoCalle, plataforma colaborativa web de datos espaciales de PSC. Este desarrollo es el resultado del esfuerzo individual de los autores, por lo que no cuenta con apoyo institucional pero pretende ofrecer una propuesta para solucionar el déficit de información espacial del fenómeno. Debido ello, el proyecto se basa en el enfoque participativo de la cartografía.
-La Cartografía Participativa es un método que permite obtener representaciones cartográficas de la percepción colectiva del entorno geográfico localizado dentro de un territorio específico. Esto se logra a través de la instrucción cartográfica de miembros de comunidades suscritas a ese espacio, quienes a través de estos recursos, buscan reafirmación y empoderamiento espacial, ya sea por conflictos, gestión social, sostenibilidad o memoria y experiencia de los pueblos  
-(Mora y Jaramillo, 2003 : 3).
+
+La Cartografía Participativa es un método que permite obtener representaciones cartográficas de la percepción colectiva del entorno geográfico localizado dentro de un territorio específico. Esto se logra a través de la instrucción cartográfica de miembros de comunidades suscritas a ese espacio, quienes a través de estos recursos, buscan reafirmación y empoderamiento espacial, ya sea por conflictos, gestión social, sostenibilidad o memoria y experiencia de los pueblos (Mora y Jaramillo, 2003 : 3).
 
 Y que buscan un medio de empoderamiento territorial ya que han entrado en conflicto con intereses gobiento y rpivado por el espacio
 Al surgir conflictos con intereses económicos externos
