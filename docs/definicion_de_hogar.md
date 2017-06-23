@@ -1,7 +1,4 @@
 ---
-layout: page
-title: Cómo contribuir
-permalink: /como_contribuir/
 exclude: true
 ---
 
