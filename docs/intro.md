@@ -72,9 +72,13 @@ acceso a herramientas de CP. Por ello se considera necesaria la
 intervención de organismos asistenciales y activistas facultados para
 desarrollar CP en representación de las PSC.
 
+# Agrupación de Conocimiento Espacial 
 
-• Pero ¿cómo se va a hacer si a ellos su necesidad mas urgente no es emporderar si no sobrevivir? 
-• Ejemplo de los datos como se han levantado
-• Todas las capas tematicas que pueden generarse hablar de la capacidad 
+El objetivo común de organismos y activistas para el uso de este método, radica en la agrupación de conocimiento espacial que satisfaga intereses de acuerdo a las diversas perspectivas de la situación de calle. Por ello, la elección de medios electrónicos para su construcción adquiere trascendencia, en el supuesto de que la unificación de perspectivas puede ofrecer una plataforma enriquecida.
+
+Así, la importancia del repositorio GEOcalle, se encuentra en la capacidad que tiene para reunir datos e información espacial de diversas temáticas, tanto de las características inherentes al fenómeno de calle, como de otro tipo. En este contexto, el diseño colaborativo posibilita el almacenaje de registros independientemente de su localización y escala, por lo que es posible llevar a cabo análisis multidimensionales al comparar características y cualidades espaciales en contextos geográficos distintos.
+
+Bajo el uso de este repositorio, analistas de distinta índole pueden reafirmar o desestimar interrelaciones entre fenómenos y/o variables geográficas en apariencia autónomas. Por ejemplo, la comparación de cartografía delictiva frente a la de presencia de PSC podría indicar la inexistencia de relaciones causales en distintos contextos geográficos.
+
 
 
