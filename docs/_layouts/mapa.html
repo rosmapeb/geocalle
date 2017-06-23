@@ -42,7 +42,9 @@ layout: default
       var PR2014= new ol.layer.Vector({source: new ol.source.Vector({url: url2014, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction    
   
   //Agrega GeoJSON a OSM
-      map.addLayer(capamagicos, PR1996, PR2014);
+      map.addLayer(capamagicos);
+      map.addLayer(PR1996);
+      map.addLayer(PR2014);  
   
 </script>
   
