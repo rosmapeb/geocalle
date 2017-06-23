@@ -45,7 +45,7 @@ de los contenidos. Al final, a través de Git, se fusionan las
 aportaciones al repositorio central, reteniendo información de autoría
 y permitiendo la trazabilidad de todo el esfuerzo.
 
-<img src="../gitflow.png">
+<img src="../gitflow.png" width="60%">
 
 Existe una enorme oferta de guías acerca del uso de Git y para el
 flujo de trabajo "Fork, pull-request" de GitHub. Algunas
