@@ -1,5 +1,5 @@
 ---
-layout: mapa_amplio
+layout: mapa
 title: Centro Histórico
 mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/magicos.json
 lon: -99.1434
