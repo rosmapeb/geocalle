@@ -1,0 +1,33 @@
+---
+layout: widemap
+---
+<h1 class="post-title">{{ page.title | escape }}</h1>
+{{ content }}
+
+<script>
+  var styleFunction = function(feature) {
+  return styles[feature.getGeometry().getType()];
+  };
+  
+  //CARGA DE OSM
+  var map = new ol.Map({
+  target: 'map',
+  layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
+      view: new ol.View({center: ol.proj.fromLonLat([{{ page.lon }}, {{ page.lat }}]), zoom: {{ page.zoom }}})
+  });
+  
+  //Declaracion de dirección de url
+  var urlmagicos= '{{ page.mapurl }}';
+  
+  //Declaracion de Capa GeoJson dentro de interfaz
+  var capamagicos = new ol.layer.Vector({
+      source: new ol.source.Vector({
+	  url: urlmagicos,
+	  style: styleFunction,
+	  format: new ol.format.GeoJSON()} )});
+  
+  //Agrega GeoJSON a OSM
+  map.addLayer(capamagicos);
+</script>
+  
+</article>
