@@ -8,19 +8,19 @@ permalink: /como_contribuir/
 # Cómo contribuir
 
 GeoCalle es un repositorio web que se apoya fundamentalmente de dos
-tecnologías: 1. OpenLayers y 2. Git.
+tecnologías: 1. [OpenLayers](https://openlayers.org) y 2. [Git](https://git-scm.com).
 
 OpenLayers es una biblioteca que permite el despliegue de mapas e
 información geográfica a través de la web. Es capaz de admitir datos
-en el formato estándar GeoJSON que, además de ser compatible con otras
+en el formato estándar [GeoJSON](http://geojson.org/) que, además de ser compatible con otras
 herramientas SIG, es fácilmente manejable por el sistema de control de
 versiones Git.
 
 Git es un protocolo y una colección de programas que permiten la
 edición colaborativa de repositorios a través control de cambios a
-archivos. Para el repositorio GeoCalle nos apoyamos también de GitHub,
+archivos. Para el repositorio GeoCalle nos apoyamos también de [GitHub](https://github.com),
 un servicio de hospedaje especializado en brindar repositorios Git.
-GitHub nos brinda la infraestructura para la publicación de páginas
+GitHub nos brinda la [infraestructura para la publicación](https://pages.github.com/) de páginas
 web y mapas interactivos, además implementa un flujo de trabajo que
 permite a cualquiera colaborar fácilmente en la creación y edición de
 contenidos.
@@ -45,8 +45,21 @@ de los contenidos. Al final, a través de Git, se fusionan las
 aportaciones al repositorio central, reteniendo información de autoría
 y permitiendo la trazabilidad de todo el esfuerzo.
 
-Existen varias guías acerca del uso de Git y para el flujo de trabajo
-"Fork, pull-request" de GitHub. Recomendamos estas:
+<img src="gitflow.png">
+
+Existe una enorme oferta de guías acerca del uso de Git y para el
+flujo de trabajo "Fork, pull-request" de GitHub. Algunas
+recomendaciones:
+
+ - [Pro Git](https://git-scm.com/book/es/v1). Libro en español
+   dedicado al protocolo Git
+ - [Git - la guía sencilla](http://rogerdudler.github.io/git-guide/index.es.html). Una
+   guía sencilla para comenzar con Git sin complicaciones
+ - [Fork de repositorios en GitHub](http://aprendegit.com/fork-de-repositorios-para-que-sirve/). Guía
+   de Fork, pull-request en español.
+   
+ - [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/). Guía
+   oficial de GitHub.
 
 Este es el flujo de trabajo que preferimos, sin embargo Git puede ser
 [un reto sustancial](https://xkcd.com/1597/) y estamos dispuestos a
