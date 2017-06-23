@@ -4,9 +4,6 @@ title: Cómo contribuir
 permalink: /como_contribuir/
 ---
 
-
-# Cómo contribuir
-
 GeoCalle es un repositorio web que se apoya fundamentalmente de dos
 tecnologías: 1. [OpenLayers](https://openlayers.org) y 2. [Git](https://git-scm.com).
 
