@@ -38,13 +38,13 @@ layout: default
       var url2014= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json';
       //Declaracion de Capa GeoJson dentro de interfaz
       var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
-      var PR1996= new ol.layer.Vector({source: new ol.source.Vector({url: url1996, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
-      var PR2014= new ol.layer.Vector({source: new ol.source.Vector({url: url2014, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction    
+      var inicio= new ol.layer.Vector({source: new ol.source.Vector({url: url1996, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
+      var atual= new ol.layer.Vector({source: new ol.source.Vector({url: url2014, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction    
   
   //Agrega GeoJSON a OSM
       map.addLayer(capamagicos);
-      map.addLayer(PR1996);
-      map.addLayer(PR2014);  
+      map.addLayer(inicio);
+      map.addLayer(atual);  
   
 </script>
   
