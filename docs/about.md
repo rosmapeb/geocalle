@@ -5,60 +5,26 @@ permalink: /acerca_de/
 ---
 # Introducción
 La situación de calle es una representación social de la exclusión y pobreza extrema que se caracteriza por la inestabilidad y ciclos constantes de privaciones, lo que se traduce en la pérdida gradual de la capacidad de proveerse de recursos necesarios para la satisfacción de sus patrones biológicos y necesidades inmediatas.
-
-En este ámbito, la privación más representativa de la situación es la carencia de un hogar , la cual determina que la población viva a la intemperie, por lo que todas las actividades deben realizarse en el espacio público , lo cual es percibido subjetivamente por la sociedad de manera tal que se desvincula al fenómeno de su dimensión espacial y desvirtúa su presencia en el espacio.
-
-Sin embargo la realidad es distinta. Las personas en situación de calle (PSC) construyen territorialidades alternas, donde el entramado urbano es la única fuente de recursos, de forma que se construyen patrones territoriales distintos a los establecidos por el capital y se encaminan hacia la lógica de la supervivencia, lo cual conforma un comportamiento complejo que hasta el momento es poco conocido 
-Debido a ello, el tipo de pobreza que ejerce la población no puede registrarse con los mecanismos de obtención de datos habituales y los instrumentos especializados no han integrado la dimensión espacial a sus perfiles metodológicos, lo cual implica una barrera para el estudio geográfico de la situación de calle.
-
-Bajo este panorama nace GeoCalle, plataforma colaborativa web de datos espaciales de PSC. Este desarrollo es el resultado del esfuerzo individual de los autores, por lo que no cuenta con apoyo institucional pero pretende ofrecer una propuesta para solucionar el déficit de información espacial del fenómeno. Debido ello, el proyecto se basa en el enfoque participativo de la cartografía.
-
-La Cartografía Participativa es un método que permite obtener representaciones cartográficas de la percepción colectiva del entorno geográfico localizado dentro de un territorio específico. Esto se logra a través de la instrucción cartográfica de miembros de comunidades suscritas a ese espacio, quienes a través de estos recursos, buscan reafirmación y empoderamiento espacial, ya sea por conflictos, gestión social, sostenibilidad o memoria y experiencia de los pueblos (Mora y Jaramillo, 2003 : 3).
-
-Y que buscan un medio de empoderamiento territorial ya que han entrado en conflicto con intereses gobiento y rpivado por el espacio
-Al surgir conflictos con intereses económicos externos
-quenes se ven forzados a recurrir a estas herramientas para empoderarse porque han entrado en 
-en su mayoría han entrado en conflicto con otras institución respecto al derecho y gestión delterritorio
-habitantes del  territorio quienes han entrado en conflicto al proclamar el espacio como su pertenencia
-o bien pretendern concientizar o llegar a una realidad colectiva para entender la realidad del espacio
-
-Que una comunidad determinada para ejercer su derecho sobre el territorio, esto ha sido inspirado principalmente cuando las comunidades entran en conflicto por territorio
-A fin de demostrar su propiedad … valia
-Con la intervención de 
-
-Pretende concientizar…
-aporte
-” de los elementos que conforman un territorio específico
-“memoria individual y colectiva” de las personas pertenecientes a un territorio específico ( Mora y Jaramillo, 2003 : 10)
-tiene su origen en el interés de recobrar … y esto se obtiene a través de  
-
-La construcción colectiva de la realidad en un territorio dado 
-
-La percepción que las personas tienen de los elementos que conforman unterritorio específico
+En este ámbito, la privación más representativa de la situación es la carencia de un hogar , la cual determina que la población viva a la intemperie, por lo que todas las actividades deben realizarse en el espacio público , esto es percibido subjetivamente por la sociedad de manera tal que se desvincula al fenómeno de su dimensión espacial y desvirtúa su presencia en el espacio.
+Sin embargo, la realidad es distinta. Las personas en situación de calle (PSC) construyen territorialidades alternas, donde el entramado urbano es la única fuente de recursos, de forma que se construyen patrones territoriales distintos a los establecidos por el capital y se encaminan hacia la lógica de supervivencia, lo cual conforma un comportamiento complejo que hasta el momento es poco conocido 
+Debido a ello, el tipo de pobreza que ejerce la población no puede registrarse con los mecanismos de obtención de datos habituales y los instrumentos especializados no han integrado la dimensión espacial a sus perfiles metodológicos, esto implica una barrera para el estudio geográfico de la situación de calle.
+Bajo este panorama nace GeoCalle, plataforma colaborativa web de datos espaciales de PSC. Este desarrollo es el resultado del esfuerzo individual de los autores, por lo que no cuenta con apoyo institucional pero pretende ofrecer una propuesta para solucionar el déficit de datos del fenómeno, y se basa en el enfoque participativo de la cartografía.
+La Cartografía Participativa permite obtener representaciones cartográficas de la comunidad y la relación con su entorno geográfico. Esto se logra a través de la confrontación de la memoria y experiencia de sus miembros a fin de reafirmar y empoderarse espacialmente ya sea por conflictos, gestión social o sostenibilidad (Mora y Jaramillo, 2003 : 3-7; Subires, 2011 : 204).
+Inicialmente el método ha sido utilizado como respuesta de los pueblos originarios a los intereses neoliberales y su lógica de desposesión. En este ámbito la participación ciudadana hace posible que la comunidad se empodere al colocarse en el … ”centro de la toma de decisiones en cuanto a planificación y desarrollo de políticas”  (Harvey, 2005; Llorente, 2012: s/f ).
+El principio fundamental de la Cartografía Participativa es comprender el espacio para fortalecer la identidad, ya que son espacios heredados a los que se precisa defender. Este principio se distorsiona para el grueso de la PSC porque no hay pertenencia, no hay empoderamiento y el interés (en el caso que exista), radica exclusivamente en la supervivencia diaria por lo que ¿Cómo se trabaja la Cartografía Participativa con PSC?
+En el ámbito de los pueblos originarios con territorio propio y la PSC como un sector carente de él la lógica de desposesión neoliberal es similar ya que se vulnera el derecho al espacio público  por lo que solo se adaptan los patrones espaciales, es decir, no existe utilidad evidente de la PSC para el uso de la cartografía participativa.
+Es aquí donde se considera necesaria la intervención de organismos autónomos ya que la PSC al no estar conciente de la necesidad espacial que tienen, estas organizaciones y activistas debe de otorgar los recursos necesarios para la vida libre
 
 
-•	Es aquí donde intervienen la carto participativa … marco conetpual de que es
+
 •	Pero como se va a hacer si a ellos su necesidad mas urgente no es emporderar si no sobrevivir? 
 •	Pues a parit de las ONG’s
 •	Como se trabajaría (consultar apuntes)
 •	Ejemplo de los datos como se han levantado
-•	Todas las capas tematicas que pueden generarse
+•	Todas las capas tematicas que pueden generarse hablar de la capacidad 
 
 •	En este contexto, la característica mas visible de este grupo es la inaccesibilidad a un hogar, la cual es la base de una serie de imposibilidades hacia recursos
 CONCEPTOS CLAVE: Incapacidad de comprender el espacio
-
-  “vivienda adecuada en la que una persona … ejerce una posesión exclusiva capaz de mantener privacidad y disfrutar relaciones dentro de un marco legal de ocupación” (Edgar, Meert y Doherty, 2004: 5)
- Institucional y no institucional
-  En la tesis de licenciatura “” , se realiza una interpretación exploratoria de dicha lógica, la cual se explica con base actividades vitales. Este trabajo ha sido publicado recientemente por EDNICA I.A.P. en colaboración con el Gobierno de la Ciudad de México (Peralta, 2016: )
-
-# Cartografía Participativa
-
-Hay muchos casos de cartografía participativa en torno a poblaciones
-originales. En esos esfuerzos se usan herramientas SIG para empoderar
-a los pobladores originales en su pugna por la conservación del
-territorio contra el Estado y sus políticas neoliberales de
-desposeción. (Harvey)
-
 
 # Poblaciones en situación de calle
 
@@ -100,11 +66,7 @@ Henri Lefebvre hace propia esa división tripartita del espacio en La producció
 La práctica espacial se corresponde con el espacio percibido, el más cercano a la vida cotidiana y a los usos más prosaicos, los lugares y conjuntos espaciales propios de cada formación social, escenario en que cada ser humano desarrolla sus competencias como ser social que se sitúa en un determinado tiempo y lugar. Son las prácticas espaciales las que segregan el espacio que practican y hacen de él espacio social. En el contexto de una ciudad, la práctica espacial remite a lo que ocurre en las calles y en las plazas, los usos que estas reciben por parte de habitantes y viandantes.
 
 Por su parte, los espacios de representación son los espacios vividos, los que envuelven los espacios físicos y les sobreponen sistemas simbólicos complejos que lo codifican y los convierten en albergue de imágenes e imaginarios. Es espacio también de usuarios y habitantes, por supuesto, pero es propio de artistas, escritores y filósofos que creen sólo describirlo. En los espacios de representación puede encontrar uno expresiones de sumisión a códigos impuestos desde los poderes, pero también las expresiones del lado clandestino o subterráneo de la vida social. Es el espacio cualitativo de los sometimientos a las representaciones dominantes del espacio, pero también en el que beben y se inspiran deserciones y desobediencias. En este caso es un espacio no percibido, pero que pugna por serlo de un modo u otro.
-
-
-
-
-
-En este repositorio se publican datos georeferenciados de personas en
-situación de calle de la Ciudad de México.
+ al no haber pertenencia, no hay lugar para el empoderamiento, ni cuando la supervivencia diaria se posiciona como la única prioridad
+cuando no existe percepción de pertenencia [saben que están ahí pero que en cualquier momento los quitan] y la supervivencia dia a dia se posicióna como la única prioridad.
+urgente sobrevivir debido a que no puede haber empoderamiento 
 
