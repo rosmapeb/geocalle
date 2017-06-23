@@ -34,10 +34,15 @@ layout: default
   
       //Declaracion de dirección de url
       var urlmagicos= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/magicos.geojson';
+      var url1996= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR1996.json';
+      var url2014= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json';
       //Declaracion de Capa GeoJson dentro de interfaz
       var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
-      //Agrega GeoJSON a OSM
-      map.addLayer(capamagicos);
+      var PR1996= new ol.layer.Vector({source: new ol.source.Vector({url: url1996, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
+      var PR2014= new ol.layer.Vector({source: new ol.source.Vector({url: url2014, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction    
+  
+  //Agrega GeoJSON a OSM
+      map.addLayer(capamagicos, PR1996, PR2014);
   
 </script>
   
