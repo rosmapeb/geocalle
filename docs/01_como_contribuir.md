@@ -90,13 +90,13 @@ Para aportar un nuevo mapa es necesario crear junto con el documento
 GeoJSON un documento Markdown que incluya cuatro campos en el
 encabezado:
 
- - el campo '''layout''' debe establecerse como "mapa", esto invoca la
+ - el campo **layout** debe establecerse como "mapa", esto invoca la
    creación del HTML apropiado.
- - el campo '''mapurl''' debe ser un URL que apunte al contenido
+ - el campo **mapurl** debe ser un URL que apunte al contenido
    GeoJSON
- - los campos lon y lat son coordenadas al centro del mapa en el
+ - los campos **lon** y **lat** son coordenadas al centro del mapa en el
    sistema de referencia World Geodetic System 1984 (EPSG:4326)
- - el campo '''zoom''' indica el nivel de acercamiento
+ - el campo **zoom** indica el nivel de acercamiento
 
 El caso de la [Población en Situación de Calle en el Centro Histórico](https://github.com/rosmapeb/geocalle/blob/master/docs/02_mapa.md)
 puede servir de ejemplo.
