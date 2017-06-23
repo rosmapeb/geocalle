@@ -30,3 +30,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - definicion_de_hogar.md
