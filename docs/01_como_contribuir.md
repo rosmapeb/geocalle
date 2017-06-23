@@ -66,7 +66,7 @@ ayudar o a admitir aportaciones por otras vías, si contacta a los
 autores.
 
 
-# GeoJSON
+# GeoJSON y Markdown
 
 GeoJSON es un formato estándar abierto diseñado para representar
 elementos geográficos sencillos, junto con atributos no
@@ -80,5 +80,20 @@ mantener control de cambios. Esta simplicidad nos permite publicar
 datos sin necesidad de infraestructura más sofisticada como
 GeoServer. 
 
-El formato de GeoJSON en uso por este repositorio para su adecuado
-funcionamiento con nuestra configuración de OpenLayeres precisa de
+Markdown es un lenguaje para expresar contenidos web de manera
+sencilla. La estrategia de GeoCalle es crear páginas web con mapas
+interactivos a través de documentos markdown y una plantilla que
+incluye la biblioteca OpenLayers y el código JavaScript necesario para
+inicializarla. 
+
+Para aportar un nuevo mapa es necesario crear junto con el documento
+GeoJSON un documento Markdown que incluya cuatro campos en el
+encabezado:
+
+ - el campo '''layout''' debe establecerse como "mapa", esto invoca la
+   creación del HTML apropiado.
+ - el campo '''mapurl''' debe ser un URL que apunte al contenido
+   GeoJSON
+ - los campos lon y lat son coordenadas al centro del mapa en el
+   sistema de referencia World Geodetic System 1984 (EPSG:4326)
+ - el campo '''zoom''' indica el nivel de acercamiento
