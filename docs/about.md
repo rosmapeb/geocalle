@@ -1,11 +1,8 @@
 ---
 layout: page
-title: Acerca de
-permalink: /acerca_de/
+title: Introducción
+permalink: /intro/
 ---
-
-
-# Introducción
 
 La situación de calle es una representación social de la exclusión y
 pobreza extrema que se caracteriza por la inestabilidad y ciclos
