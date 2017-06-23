@@ -45,7 +45,7 @@ de los contenidos. Al final, a través de Git, se fusionan las
 aportaciones al repositorio central, reteniendo información de autoría
 y permitiendo la trazabilidad de todo el esfuerzo.
 
-<img src="gitflow.png">
+<img src="../gitflow.png">
 
 Existe una enorme oferta de guías acerca del uso de Git y para el
 flujo de trabajo "Fork, pull-request" de GitHub. Algunas
@@ -57,7 +57,6 @@ recomendaciones:
    guía sencilla para comenzar con Git sin complicaciones
  - [Fork de repositorios en GitHub](http://aprendegit.com/fork-de-repositorios-para-que-sirve/). Guía
    de Fork, pull-request en español.
-   
  - [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/). Guía
    oficial de GitHub.
 
