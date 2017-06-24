@@ -1,7 +1,7 @@
 ---
 layout: mapa
 title: Centro Histórico
-mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/magicos.json
+mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json
 lon: -99.1434
 lat: 19.4321
 zoom: 15

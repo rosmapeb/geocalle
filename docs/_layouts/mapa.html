@@ -29,22 +29,16 @@ layout: default
       var map = new ol.Map({
         target: 'map',
         layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
-        view: new ol.View({center: ol.proj.fromLonLat([-99.13, 19.43]), zoom: 15})
+        view: new ol.View({center: ol.proj.fromLonLat([{{ page.lon }}, {{ page.lat }}]), zoom: {{ page.zoom }}})
       });
   
       //Declaracion de dirección de url
-      var urlmagicos= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/magicos.geojson';
-      var url1996= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR1996.json';
-      var url2014= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json';
+      var mapurl= '{{ page.mapurl }}';
       //Declaracion de Capa GeoJson dentro de interfaz
-      var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
-      var inicio= new ol.layer.Vector({source: new ol.source.Vector({url: url1996, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
-      var atual= new ol.layer.Vector({source: new ol.source.Vector({url: url2014, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction    
+      var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
   
   //Agrega GeoJSON a OSM
-      map.addLayer(capamagicos);
-      map.addLayer(inicio);
-      map.addLayer(atual);  
+      map.addLayer(capa);
   
 </script>
   
