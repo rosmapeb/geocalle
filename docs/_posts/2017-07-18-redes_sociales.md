@@ -6,20 +6,16 @@ categories: anuncio
 ---
 
 
-¡Ya tenemos redes sociales!
+¡Estamos en las "redes sociales"!
 
-Con mucho entusiasmo anunciamos que en pro de fortalecer el repositorio, ampliamos  nuestra presencia en redes sociales:
+Con mucho entusiasmo anunciamos que en pro de fortalecer el repositorio, ampliamos nuestra presencia en estos servicios:
 
-Facebook
-https://www.facebook.com/profile.php?id=100019261123144&ref=bookmarks
+[Facebook](https://www.facebook.com/profile.php?id=100019261123144&ref=bookmarks)
 
-Youtube
-https://www.youtube.com/channel/UCgobU_ecA0Hh87jmlIFlvNA
+[Youtube](https://www.youtube.com/channel/UCgobU_ecA0Hh87jmlIFlvNA)
 
-Twitter
-https://twitter.com/GeoCalleRepo
+[Twitter](https://twitter.com/GeoCalleRepo)
 
-Instangram
-https://www.instagram.com/geocalle.repo/
+[Instangram](https://www.instagram.com/geocalle.repo/)
 
-¿Por qué no suscribirse? :-)
+¿Por qué no suscribirse o seguirnos?
