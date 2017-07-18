@@ -22,4 +22,4 @@ https://twitter.com/GeoCalleRepo
 Instangram
 https://www.instagram.com/geocalle.repo/
 
-Suscríbanse
+¿Por qué no suscribirse? :-)
