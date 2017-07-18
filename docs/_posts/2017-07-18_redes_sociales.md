@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "GeoCalle en redes sociales"
+date:   2017-07-18 11:11:11 -0500
+categories: anuncio
+---
+
+
 ¡Ya tenemos redes sociales!
 
 Con mucho entusiasmo anunciamos que en pro de fortalecer el repositorio, ampliamos  nuestra presencia en redes sociales:
