@@ -40,6 +40,30 @@ layout: default
   //Agrega GeoJSON a OSM
       map.addLayer(capa);
   
+//~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~ 
+
+map.addControl(new ol.control.FullScreen());
+map.addControl(new ol.control.OverviewMap());
+
+
+//~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
+
+var seleccion= new ol.interaction.Select();
+map.addInteraction(seleccion);
+seleccion.on('select', function(e) {
+  //ol.interaction.SelectEvent
+  var div=document.getElementById(
+    'seleccion');
+  var seleccionados = e.target.getFeatures();
+  var html = '';
+  seleccionados.forEach(function(t){
+    html += 'LUGAR: ' + t.get('Ubicacion') + '| Tipo:  <strong>' + t.get ('Tipopunto') + '</strong>' + '| Colonia: <strong>' + t.get ('Colonia') + '</strong>';
+    html += '<hr/>';
+  });
+  div.innerHTML=html;
+
+});
+  
 </script>
   
 </article>
