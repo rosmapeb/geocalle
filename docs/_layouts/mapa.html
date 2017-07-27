@@ -59,7 +59,10 @@ seleccion.on('select', function(e) {
   var seleccionados = e.target.getFeatures();
   var html = '';
   seleccionados.forEach(function(t){
-    html += 'LUGAR: ' + t.get('Ubicacion') + '| Tipo:  <strong>' + t.get ('Tipopunto') + '</strong>' + '| Colonia: <strong>' + t.get ('Colonia') + '</strong>';
+     html += '<strong> LUGAR: </strong> ' + t.get('Ubicacion') +
+            '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + 
+            '<strong> COLONIA: </strong> ' + t.get ('Colonia') +
+            '<strong> ESTATUS: </strong> ' + t.get ('Estatus') ;
     html += '<hr/>';
   });
   div.innerHTML=html;
