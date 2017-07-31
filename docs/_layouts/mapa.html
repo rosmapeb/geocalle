@@ -34,7 +34,7 @@ layout: default
     };
 
   //Perimetros
-  // var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
+  var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
   
   
       var vectorSource = new ol.source.Vector({
@@ -60,19 +60,21 @@ layout: default
       var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
   
       // Perimetros A y B    
-      //var pa= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periA_line.geojson'; 
-      //var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson'; 
+      var pa= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periA_line.geojson'; 
+      var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson'; 
   
-      //var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
-      //var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});
+      var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
+      var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});
   
   //Agrega estilos
   capa.setStyle(styleFunction);
+  capapb.setStyle(poly);
+  capapa.setStyle(poly);      
 
   
   //Agrega GeoJSON a OSM
-  //capapb.setStyle(poly);
-  //capapa.setStyle(poly);    
+  map.addLayer(capapa);
+  map.addLayer(capapb);
   map.addLayer(capa);
   
 //~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~ 
