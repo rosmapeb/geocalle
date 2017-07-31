@@ -2,13 +2,13 @@
 layout: mapa
 title: Centro Histórico
 mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json
-lon: -99.14
+lon: -99.15
 lat: 19.433
 zoom: 14
 ---
 
 
-Como aporte inicial a GEOcalle se presentan los datos obtenidos del trabajo de licenciatura “La Reconfiguración Espacial y la población sin hogar en el Centro Histórico de la Ciudad de México”  el cual reúne datos georeferenciados de PSC para los años 1996 y 2014, bajo la categoría de análisis espacial “Enclave Temporal Urbano” representada cartográficamente a través de geometría de puntos.
+Como aporte inicial a GeoCalle se presentan los datos obtenidos del trabajo de licenciatura “La Reconfiguración Espacial y la población sin hogar en el Centro Histórico de la Ciudad de México”  el cual reúne datos georeferenciados de PSC para los años 1996 y 2014, bajo la categoría de análisis espacial “Enclave Temporal Urbano” representada cartográficamente a través de geometría de puntos.
 
 Las personas en situación de calle son constructores espaciales en el ámbito de la informalidad. En este contexto, construyen espacios denominados "Enclaves Temporales Urbanos" provenientes de la Escala Microlocal según Michael Paccione (2009) y Edward Soja (2012).
 
