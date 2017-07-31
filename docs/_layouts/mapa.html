@@ -37,7 +37,7 @@ layout: default
   var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
   
   //Heatmap
-  var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: urlmagicos, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
+  var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
   
   
       var vectorSource = new ol.source.Vector({
