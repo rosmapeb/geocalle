@@ -2,7 +2,7 @@
 layout: mapa
 title: Centro Histórico
 mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json
-lon: -99.15
+lon: -109.15
 lat: 19.433
 zoom: 14
 ---
