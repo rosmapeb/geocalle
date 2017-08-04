@@ -98,11 +98,14 @@ seleccion.on('select', function(e) {
   var seleccionados = e.target.getFeatures();
   var html = '';
   seleccionados.forEach(function(t){
-     html +='<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + 
-            '<strong> LUGAR: </strong> ' + t.get('Ubicacion') +
-            '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + 
-            '<strong> COLONIA: </strong> ' + t.get ('Colonia') +
-            '<strong> ESTATUS: </strong> ' + t.get ('Estatus') ;
+     html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + '</br>' +
+            '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
+            '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
+            '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
+            '<strong> DELEGACIÓN:  </strong>' + t.get ('Delegacion') + '</br>' +
+            '<strong> COLONIA: </strong> ' + t.get ('Colonia') +'</br>' +
+            '<strong> ESTATUS: </strong> ' + t.get ('Estatus') + '</br>' +
+            '<strong> OBSERVACIONES:  </strong>' + t.get ('obs') ;
     html += '<hr/>';
   });
   div.innerHTML=html;
