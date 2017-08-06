@@ -1,6 +1,6 @@
 ---
-layout: valedor
-title: Mi valedor
+layout: 
+title: Mi Valedor
 mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/CHCM_PR2014.json
 lon: -99.135
 lat: 19.433
