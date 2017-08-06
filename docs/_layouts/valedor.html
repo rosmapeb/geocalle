@@ -14,41 +14,7 @@ layout: default
 <div id="seleccion" style="margin-top:10px"></div>  
   
 <script>
-      //var styles = {
-      //};
-      //var styleFunction = function(feature) {
-      //  return styles[feature.getGeometry().getType()];
-      //};
-  
-  //~~~~~~~~~~~~~~ESTILOS~~~~~~~~~~~~~~~ 
-  
-  //PUNTOS EN CATEGORIA
-        var styleFunction = function(capa){
-        if (capa.get('Estatus') === 'Verificado') { strokecolor = '#2177B1';
-      } else if (capa.get('Estatus') === 'No verificado') { strokecolor = '#FFFE01';
-      } else if (capa.get('Estatus') === 'Eliminado') { strokecolor = '#AB0000';
-      } else if (capa.get('Estatus') === 'Nuevo') { strokecolor = '#00AA00';
-      }
-      return[ new ol.style.Style ({
-        image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })]; 
-    };
 
-  //Perimetros
-  var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
-  
-  //Heatmap
-  var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
-  
-  
-      var vectorSource = new ol.source.Vector({
-      format: new ol.format.GeoJSON(),
-      url: '{{ page.mapurl }}'
-      });
-  
-      var vectorLayer = new ol.layer.Vector({
-        source: vectorSource,
-        style: styleFunction
-      });
   
       //CARGA DE OSM
       var map = new ol.Map({
@@ -62,12 +28,7 @@ layout: default
       //Declaracion de Capa GeoJson dentro de interfaz
       var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
   
-      // Perimetros A y B    
-      var pa= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periA_line.geojson'; 
-      var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson'; 
-  
-      var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
-      var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});
+
   
   //Agrega estilos
   capa.setStyle(styleFunction);
@@ -87,30 +48,7 @@ map.addControl(new ol.control.FullScreen());
 map.addControl(new ol.control.OverviewMap());
 
 
-//~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
 
-var seleccion= new ol.interaction.Select();
-map.addInteraction(seleccion);
-seleccion.on('select', function(e) {
-  //ol.interaction.SelectEvent
-  var div=document.getElementById(
-    'seleccion');
-  var seleccionados = e.target.getFeatures();
-  var html = '';
-  seleccionados.forEach(function(t){
-     html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + '</br>' +
-            '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
-            '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
-            '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
-            '<strong> DELEGACIÓN:  </strong>' + t.get ('Delegacion') + '</br>' +
-            '<strong> COLONIA: </strong> ' + t.get ('Colonia') +'</br>' +
-            '<strong> ESTATUS: </strong> ' + t.get ('Estatus') + '</br>' +
-            '<strong> OBSERVACIONES:  </strong>' + t.get ('obs')+ '</br>' ;
-    html += '<hr/>';
-  });
-  div.innerHTML=html;
-
-});
   
 </script>
   
