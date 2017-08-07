@@ -95,5 +95,5 @@ encabezado:
    sistema de referencia World Geodetic System 1984 (EPSG:4326)
  - el campo **zoom** indica el nivel de acercamiento
 
-El caso de la [Población en Situación de Calle en el Centro Histórico](https://github.com/rosmapeb/geocalle/blob/master/docs/02_mapa.md)
+El caso de la [Población en Situación de Calle en el Centro Histórico](http://geocalle.org/psc_chcm.html)
 puede servir de ejemplo.
