@@ -7,5 +7,4 @@ lat: 19.423
 zoom: 14
 ---
 
-
-hola 
+http://mivaledor.com/
