@@ -30,28 +30,18 @@ layout: default
       //Estilo de MiValedor
       //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ anchor: [0.5, 0.5], size:[52,52], offset:[52,0], opacity:1, scale: 0.25, src: "images/mivaledor.png"}) });
 
-      var icons = [
-                "images/alfredo.jpg",
-                "images/arturo.jpg",
-                "images/camaxtli.jpg",
-                "images/francisco.jpg",
-                "images/isaias.jpg",
-                "images/jose-1.jpg",
-                "images/leo-1g",
-                "images/mv.jpg"
-            ];
 
       //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "images/mivaledor.png"}) });
 
     var valestyle = function(capavaledores){
-        if (capavaledores.get('name') === 'alfredo') { iconovale = "images/alfredo.jpg";
-      } else if (capamagicos.get('name') === 'arturo') { iconovale = "images/arturo.jpg";
-      } else if (capamagicos.get('name') === 'camaxtli') { iconovale = "images/camaxtli.jpg";
-      } else if (capamagicos.get('name') === 'francisco') { iconovale = "images/francisco.jpg";
-      } else if (capamagicos.get('name') === 'isaias') { iconovale = "images/isaias.jpg";
-      } else if (capamagicos.get('name') === 'jose-1') { iconovale = "images/jose-1.jpg";
-      } else if (capamagicos.get('name') === 'leo-1') { iconovale = "images/leo-1.jpg";
-      } else if (capamagicos.get('name') === 'mv') { iconovale = "images/mivaledor.png";
+        if (capavaledores.get('name') === 'alfredo') { iconovale = "alfredo.jpg";
+      } else if (capamagicos.get('name') === 'arturo') { iconovale = "arturo.jpg";
+      } else if (capamagicos.get('name') === 'camaxtli') { iconovale = "camaxtli.jpg";
+      } else if (capamagicos.get('name') === 'francisco') { iconovale = "francisco.jpg";
+      } else if (capamagicos.get('name') === 'isaias') { iconovale = "isaias.jpg";
+      } else if (capamagicos.get('name') === 'jose-1') { iconovale = "jose-1.jpg";
+      } else if (capamagicos.get('name') === 'leo-1') { iconovale = "leo-1.jpg";
+      } else if (capamagicos.get('name') === 'mv') { iconovale = "mivaledor.png";
       }      
       return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ]; 
     };
