@@ -5,8 +5,8 @@
 "features": [
 { "type": "Feature", "properties": { "id": 1, "descripcio": "Fuente de Cibeles", "name": "alfredo" }, "geometry": { "type": "Point", "coordinates": [ -99.166266751709003, 19.420001964236782 ] } },
 { "type": "Feature", "properties": { "id": 2, "descripcio": "Museo Tamayo", "name": "camaxtli" }, "geometry": { "type": "Point", "coordinates": [ -99.181726253367586, 19.425731105155986 ] } },
-{ "type": "Feature", "properties": { "id": null, "descripcio": "Parque Mexico", "name": null }, "geometry": { "type": "Point", "coordinates": [ -99.16893966289858, 19.411553069783938 ] } },
-{ "type": "Feature", "properties": { "id": null, "descripcio": "Parque España", "name": null }, "geometry": { "type": "Point", "coordinates": [ -99.170660475073831, 19.415880995503038 ] } },
+{ "type": "Feature", "properties": { "id": null, "descripcio": "Parque Mexico", "name": "mv" }, "geometry": { "type": "Point", "coordinates": [ -99.16893966289858, 19.411553069783938 ] } },
+{ "type": "Feature", "properties": { "id": null, "descripcio": "Parque España", "name": "mv" }, "geometry": { "type": "Point", "coordinates": [ -99.170660475073831, 19.415880995503038 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Reforma I", "name": "isaias" }, "geometry": { "type": "Point", "coordinates": [ -99.154823597602586, 19.433041095574104 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Reforma II", "name": "isaias" }, "geometry": { "type": "Point", "coordinates": [ -99.160275181501291, 19.43051906993222 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Reforma III", "name": "isaias" }, "geometry": { "type": "Point", "coordinates": [ -99.167681106797644, 19.42705930438332 ] } },
@@ -17,9 +17,9 @@
 { "type": "Feature", "properties": { "id": null, "descripcio": "Álvaro Obregón", "name": "francisco" }, "geometry": { "type": "Point", "coordinates": [ -99.158064690755339, 19.418632420700312 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Londres y Liverpool", "name": "alfredo" }, "geometry": { "type": "Point", "coordinates": [ -99.158798722968939, 19.427894338761597 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "16 de Septiembre", "name": "arturo" }, "geometry": { "type": "Point", "coordinates": [ -99.137180819368595, 19.427067475436683 ] } },
-{ "type": "Feature", "properties": { "id": null, "descripcio": "Avenida Juárez", "name": null }, "geometry": { "type": "Point", "coordinates": [ -99.143969942087324, 19.434747255073784 ] } },
-{ "type": "Feature", "properties": { "id": null, "descripcio": "Museo Franz Meyer", "name": null }, "geometry": { "type": "Point", "coordinates": [ -99.143015379629787, 19.43691081312469 ] } },
-{ "type": "Feature", "properties": { "id": null, "descripcio": "Monumento a la Revolución", "name": null }, "geometry": { "type": "Point", "coordinates": [ -99.154202181763623, 19.436121196738775 ] } },
+{ "type": "Feature", "properties": { "id": null, "descripcio": "Avenida Juárez", "name": "mv" }, "geometry": { "type": "Point", "coordinates": [ -99.143969942087324, 19.434747255073784 ] } },
+{ "type": "Feature", "properties": { "id": null, "descripcio": "Museo Franz Meyer", "name": "mv" }, "geometry": { "type": "Point", "coordinates": [ -99.143015379629787, 19.43691081312469 ] } },
+{ "type": "Feature", "properties": { "id": null, "descripcio": "Monumento a la Revolución", "name": "mv" }, "geometry": { "type": "Point", "coordinates": [ -99.154202181763623, 19.436121196738775 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Sta María la Rivera", "name": "jose-1" }, "geometry": { "type": "Point", "coordinates": [ -99.156848161909082, 19.449607317194832 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Coyoacan", "name": "jose-1" }, "geometry": { "type": "Point", "coordinates": [ -99.162376569180083, 19.349737545761602 ] } },
 { "type": "Feature", "properties": { "id": null, "descripcio": "Genova", "name": "leo-1" }, "geometry": { "type": "Point", "coordinates": [ -99.164234259759141, 19.426578099450762 ] } }
