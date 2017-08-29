@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+<div id="map" class="map"></div>
+<div id="seleccion" style="margin-top:10px"></div>  
+  
+<script>
+
+      //CARGA DE OSM
+      var map = new ol.Map({
+        target: 'map',
+        layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
+        view: new ol.View({center: ol.proj.fromLonLat([-99.162, 19.423]), zoom: 14.5})
+      });
+
+      //CARGA DE GEOJSON
+
+      //Declaracion de dirección de url
+      var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson'; 
+
+      //Estilo de MiValedor
+      //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ anchor: [0.5, 0.5], size:[52,52], offset:[52,0], opacity:1, scale: 0.25, src: "images/mivaledor.png"}) });
+
+      var icons = [
+                "images/alfredo.jpg",
+                "images/arturo.jpg",
+                "images/camaxtli.jpg",
+                "images/francisco.jpg",
+                "images/isaias.jpg",
+                "images/jose-1.jpg",
+                "images/leo-1g",
+                "images/mv.jpg"
+            ];
+
+      //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "images/mivaledor.png"}) });
+
+    var valestyle = function(capavaledores){
+        if (capavaledores.get('name') === 'alfredo') { iconovale = "images/alfredo.jpg";
+      } else if (capamagicos.get('name') === 'arturo') { iconovale = "images/arturo.jpg";
+      } else if (capamagicos.get('name') === 'camaxtli') { iconovale = "images/camaxtli.jpg";
+      } else if (capamagicos.get('name') === 'francisco') { iconovale = "images/francisco.jpg";
+      } else if (capamagicos.get('name') === 'isaias') { iconovale = "images/isaias.jpg";
+      } else if (capamagicos.get('name') === 'jose-1') { iconovale = "images/jose-1.jpg";
+      } else if (capamagicos.get('name') === 'leo-1') { iconovale = "images/leo-1.jpg";
+      } else if (capamagicos.get('name') === 'mv') { iconovale = "images/mivaledor.png";
+      }      
+      return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ]; 
+    };
+
+
+      //return[ new ol.style.Style ({
+        //image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })]; 
+    //};
+
+
+     //Declaracion de Capa GeoJson dentro de interfaz     
+
+
+
+      //var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleA, format: new ol.format.GeoJSON()} )}); 
+
+      var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style: valestyle ,format: new ol.format.GeoJSON()} )});
+
+      //Trae estilo
+      //capamagicos.setStyle(styleA);
+
+      mivale.setStyle(valestyle);
+
+
+      //Trae capa
+      map.addLayer(mivale);
+  
+</script>
+  
+ 
+</article>
