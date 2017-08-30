@@ -11,8 +11,8 @@ layout: default
   </div>
 
 <div id="map" class="map"></div>
-<div id="seleccion" style="margin-top:10px"></div>  
-  
+<div id="seleccion" style="margin-top:10px"></div>
+
 <script>
 
       //CARGA DE OSM
@@ -25,7 +25,15 @@ layout: default
       //CARGA DE GEOJSON
 
       //Declaracion de dirección de url
-      var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson'; 
+      var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_mv.geojson';
+      var alfredo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_alfredo.geojson';
+      var arturo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_arturo.geojson';
+      var camaxtli= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_camaxtli.geojson';
+      var francisco= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_francisco.geojson';
+      var isaias= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_isaias.geojson';
+      var jose= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_jose-1.geojson';
+      var leo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_leo-1.geojson';
+
 
       //Estilo de MiValedor
 
@@ -41,11 +49,11 @@ layout: default
       //} else if (capamagicos.get('name') === 'jose-1') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9NnVSaC1xTFd6cE0";
       //} else if (capamagicos.get('name') === 'leo-1') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9T3NTcWtTWm0tTkk";
       //} else if (capamagicos.get('name') === 'mv') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9a29zcHpOY0RtQmc";
-      //}      
-      //return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ]; 
+      //}
+      //return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ];
     //};
 
-     //Declaracion de Capa GeoJson dentro de interfaz     
+     //Declaracion de Capa GeoJson dentro de interfaz
 
       var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
 
@@ -55,8 +63,8 @@ layout: default
 
       //Trae capa
       map.addLayer(mivale);
-  
+
 </script>
-  
- 
+
+
 </article>
