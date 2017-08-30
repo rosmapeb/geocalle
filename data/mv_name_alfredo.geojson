@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "mv_name_alfredo",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "descripcio": "Fuente de Cibeles", "name": "alfredo" }, "geometry": { "type": "Point", "coordinates": [ -99.166266751709003, 19.420001964236782 ] } },
+{ "type": "Feature", "properties": { "id": 2, "descripcio": "Londres y Liverpool", "name": "alfredo" }, "geometry": { "type": "Point", "coordinates": [ -99.158798722968939, 19.427894338761597 ] } }
+]
+}
