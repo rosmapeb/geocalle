@@ -28,9 +28,7 @@ layout: default
       var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson'; 
 
       //Estilo de MiValedor
-      //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ anchor: [0.5, 0.5], size:[52,52], offset:[52,0], opacity:1, scale: 0.25, src: "images/mivaledor.png"}) });
-
-
+      
     var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9a29zcHpOY0RtQmc"}) });
 
     //var valestyle = function(capavaledores){
@@ -47,22 +45,11 @@ layout: default
     //};
 
 
-      //return[ new ol.style.Style ({
-        //image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })]; 
-    //};
-
-
      //Declaracion de Capa GeoJson dentro de interfaz     
-
-
-
-      //var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleA, format: new ol.format.GeoJSON()} )}); 
 
       var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style: valestyle ,format: new ol.format.GeoJSON()} )});
 
       //Trae estilo
-      //capamagicos.setStyle(styleA);
-
       mivale.setStyle(valestyle);
 
 
