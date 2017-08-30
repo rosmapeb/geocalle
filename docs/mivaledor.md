@@ -1,5 +1,5 @@
 ---
-layout: mapa
+layout: mivaledor
 title: Mi Valedor
 mapurl: https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson
 lon: -99.162
