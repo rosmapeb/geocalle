@@ -28,31 +28,20 @@ layout: default
       var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson'; 
 
       //Estilo de MiValedor
-      //var fill = new ol.style.Fill({ color: 'rgba(255,255,255,0.4)' });
-      //var stroke = new ol.style.Stroke({ color: '#379B37', width: 1.25 });
-      //var valestyle = [ new ol.style.Style({ image: new ol.style.Circle({ fill: fill, stroke: stroke, radius: 15 }), fill: fill, stroke: stroke }) ];
-        
-     var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "../mivaledor.png"}) });
-  
-    //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "https://raw.githubusercontent.com/rosmapeb/geocalle/master/docs/_layouts/mivaledor.png"}) });
 
-    //var valestyle = function(capavaledores){
-     //   if (capavaledores.get('name') === 'alfredo') { iconovale = "alfredo.jpg";
-     // } else if (capamagicos.get('name') === 'arturo') { iconovale = "arturo.jpg";
-     // } else if (capamagicos.get('name') === 'camaxtli') { iconovale = "camaxtli.jpg";
-     // } else if (capamagicos.get('name') === 'francisco') { iconovale = "francisco.jpg";
-     // } else if (capamagicos.get('name') === 'isaias') { iconovale = "isaias.jpg";
-     // } else if (capamagicos.get('name') === 'jose-1') { iconovale = "jose-1.jpg";
-     // } else if (capamagicos.get('name') === 'leo-1') { iconovale = "leo-1.jpg";
-     // } else if (capamagicos.get('name') === 'mv') { iconovale = "mivaledor.png";
-     // }      
-     // return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ]; 
-    //};
+      var fill = new ol.style.Fill({ color: '#379B37' });
+      var stroke = new ol.style.Stroke({ color: '#379B37', width: 1.25 });
+      var valestyle = [ new ol.style.Style({ image: new ol.style.Circle({ fill: fill, stroke: stroke, radius: 15 }), fill: fill, stroke: stroke }) ];
+
 
 
      //Declaracion de Capa GeoJson dentro de interfaz     
 
-      var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style: valestyle ,format: new ol.format.GeoJSON()} )});
+
+
+      //var capamagicos= new ol.layer.Vector({source: new ol.source.Vector({url: urlmagicos, style: styleA, format: new ol.format.GeoJSON()} )}); 
+
+      var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
 
       //Trae estilo
       mivale.setStyle(valestyle);
