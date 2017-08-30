@@ -28,11 +28,11 @@ layout: default
       var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson'; 
 
       //Estilo de MiValedor
-      var fill = new ol.style.Fill({ color: 'rgba(255,255,255,0.4)' });
-      var stroke = new ol.style.Stroke({ color: '#379B37', width: 1.25 });
-      var valestyle = [ new ol.style.Style({ image: new ol.style.Circle({ fill: fill, stroke: stroke, radius: 15 }), fill: fill, stroke: stroke }) ];
+      //var fill = new ol.style.Fill({ color: 'rgba(255,255,255,0.4)' });
+      //var stroke = new ol.style.Stroke({ color: '#379B37', width: 1.25 });
+      //var valestyle = [ new ol.style.Style({ image: new ol.style.Circle({ fill: fill, stroke: stroke, radius: 15 }), fill: fill, stroke: stroke }) ];
         
-        //new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "https://raw.githubusercontent.com/rosmapeb/geocalle/master/docs/_layouts/mivaledor.png"}) });
+     var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "../mivaledor.png"}) });
   
     //var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.15, src: "https://raw.githubusercontent.com/rosmapeb/geocalle/master/docs/_layouts/mivaledor.png"}) });
 
