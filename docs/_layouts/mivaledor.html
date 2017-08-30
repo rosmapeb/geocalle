@@ -92,6 +92,36 @@ layout: default
       map.addLayer(valejose);
       map.addLayer(valeleo);
 
+      //~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
+
+      var seleccion= new ol.interaction.Select();
+      map.addInteraction(seleccion);
+      seleccion.on('select', function(e) {
+        //ol.interaction.SelectEvent
+        var div=document.getElementById(
+          'seleccion');
+        var seleccionados = e.target.getFeatures();
+        var html = '';
+        seleccionados.forEach(function(t){
+           html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + '</br>' +
+                  '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
+                  '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
+                  '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
+                  '<strong> DELEGACIÓN:  </strong>' + t.get ('Delegacion') + '</br>' +
+                  '<strong> COLONIA: </strong> ' + t.get ('Colonia') +'</br>' +
+                  '<strong> ESTATUS: </strong> ' + t.get ('Estatus') + '</br>' +
+                  '<strong> OBSERVACIONES:  </strong>' + t.get ('obs')+ '</br>' ;
+          html += '<hr/>';
+        });
+        div.innerHTML=html;
+
+      });
+
+      //~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~
+
+      map.addControl(new ol.control.FullScreen());
+      map.addControl(new ol.control.OverviewMap());            
+
 </script>
 
 
