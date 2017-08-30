@@ -38,6 +38,13 @@ layout: default
       //Estilo de MiValedor
 
     var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9a29zcHpOY0RtQmc"}) });
+    var alfredostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9SXUydl9EWUZINUU"}) });
+    var arturostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9bmNLNk1QRmhTY28"}) });
+    var camaxtlistyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9VmMtZzZTY2trRVk"}) });
+    var franciscostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9YTlWaEVRN2JLOUU"}) });
+    var isaiastyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9d1FLbDNZS190SWM"}) });
+    var josestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9NnVSaC1xTFd6cE0"}) });
+    var leostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9T3NTcWtTWm0tTkk"}) });
 
     // var valestyle = function(capavaledores){
       //  if (capavaledores.get('name') === 'alfredo') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9SXUydl9EWUZINUU";
@@ -56,13 +63,34 @@ layout: default
      //Declaracion de Capa GeoJson dentro de interfaz
 
       var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valealfredo= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valearturo= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valecamaxtli= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valefrancisco= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valeisaias= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valejose= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valeleo= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
 
       //Trae estilo
       mivale.setStyle(valestyle);
+      valealfredo.setStyle(alfredostyle);
+      valearturo.setStyle(arturostyle);
+      valecamaxtli.setStyle(camaxtlistyle);
+      valefrancisco.setStyle(franciscostyle);
+      valeisaias.setStyle(isaiastyle);
+      valejose.setStyle(josestyle);
+      valeleo.setStyle(leostyle);
 
 
       //Trae capa
       map.addLayer(mivale);
+      map.addLayer(valealfredo);
+      map.addLayer(valearturo);
+      map.addLayer(valecamaxtli);
+      map.addLayer(valefrancisco);
+      map.addLayer(valeisaias);
+      map.addLayer(valejose);
+      map.addLayer(valeleo);
 
 </script>
 
