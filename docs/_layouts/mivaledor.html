@@ -11,8 +11,8 @@ layout: default
   </div>
 
 <div id="map" class="map"></div>
-<div id="seleccion" style="margin-top:10px"></div>  
-  
+<div id="seleccion" style="margin-top:10px"></div>
+
 <script>
 
       //CARGA DE OSM
@@ -25,11 +25,26 @@ layout: default
       //CARGA DE GEOJSON
 
       //Declaracion de dirección de url
-      var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv.geojson'; 
+      var mv= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_mv.geojson';
+      var alfredo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_alfredo.geojson';
+      var arturo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_arturo.geojson';
+      var camaxtli= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_camaxtli.geojson';
+      var francisco= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_francisco.geojson';
+      var isaias= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_isaias.geojson';
+      var jose= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_jose-1.geojson';
+      var leo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_leo-1.geojson';
+
 
       //Estilo de MiValedor
 
     var valestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9a29zcHpOY0RtQmc"}) });
+    var alfredostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9SXUydl9EWUZINUU"}) });
+    var arturostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9bmNLNk1QRmhTY28"}) });
+    var camaxtlistyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9VmMtZzZTY2trRVk"}) });
+    var franciscostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9YTlWaEVRN2JLOUU"}) });
+    var isaiastyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9d1FLbDNZS190SWM"}) });
+    var josestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9NnVSaC1xTFd6cE0"}) });
+    var leostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9T3NTcWtTWm0tTkk"}) });
 
     // var valestyle = function(capavaledores){
       //  if (capavaledores.get('name') === 'alfredo') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9SXUydl9EWUZINUU";
@@ -41,22 +56,73 @@ layout: default
       //} else if (capamagicos.get('name') === 'jose-1') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9NnVSaC1xTFd6cE0";
       //} else if (capamagicos.get('name') === 'leo-1') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9T3NTcWtTWm0tTkk";
       //} else if (capamagicos.get('name') === 'mv') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9a29zcHpOY0RtQmc";
-      //}      
-      //return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ]; 
+      //}
+      //return[ new ol.style.Style ({image: new ol.style.Icon({ scale: 0.35, src: iconovale }) }) ];
     //};
 
-     //Declaracion de Capa GeoJson dentro de interfaz     
+     //Declaracion de Capa GeoJson dentro de interfaz
 
       var mivale= new ol.layer.Vector({source: new ol.source.Vector({url: mv, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valealfredo= new ol.layer.Vector({source: new ol.source.Vector({url: alfredo, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valearturo= new ol.layer.Vector({source: new ol.source.Vector({url: arturo, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valecamaxtli= new ol.layer.Vector({source: new ol.source.Vector({url: camaxtli, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valefrancisco= new ol.layer.Vector({source: new ol.source.Vector({url: francisco, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valeisaias= new ol.layer.Vector({source: new ol.source.Vector({url: isaias, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valejose= new ol.layer.Vector({source: new ol.source.Vector({url: jose, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var valeleo= new ol.layer.Vector({source: new ol.source.Vector({url: leo, style:valestyle ,format: new ol.format.GeoJSON()} )});
 
       //Trae estilo
       mivale.setStyle(valestyle);
+      valealfredo.setStyle(alfredostyle);
+      valearturo.setStyle(arturostyle);
+      valecamaxtli.setStyle(camaxtlistyle);
+      valefrancisco.setStyle(franciscostyle);
+      valeisaias.setStyle(isaiastyle);
+      valejose.setStyle(josestyle);
+      valeleo.setStyle(leostyle);
 
 
       //Trae capa
       map.addLayer(mivale);
-  
+      map.addLayer(valealfredo);
+      map.addLayer(valearturo);
+      map.addLayer(valecamaxtli);
+      map.addLayer(valefrancisco);
+      map.addLayer(valeisaias);
+      map.addLayer(valejose);
+      map.addLayer(valeleo);
+
+      //~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
+
+      var seleccion= new ol.interaction.Select();
+      map.addInteraction(seleccion);
+      seleccion.on('select', function(e) {
+        //ol.interaction.SelectEvent
+        var div=document.getElementById(
+          'seleccion');
+        var seleccionados = e.target.getFeatures();
+        var html = '';
+        seleccionados.forEach(function(t){
+           html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + '</br>' +
+                  '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
+                  '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
+                  '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
+                  '<strong> DELEGACIÓN:  </strong>' + t.get ('Delegacion') + '</br>' +
+                  '<strong> COLONIA: </strong> ' + t.get ('Colonia') +'</br>' +
+                  '<strong> ESTATUS: </strong> ' + t.get ('Estatus') + '</br>' +
+                  '<strong> OBSERVACIONES:  </strong>' + t.get ('obs')+ '</br>' ;
+          html += '<hr/>';
+        });
+        div.innerHTML=html;
+
+      });
+
+      //~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~
+
+      map.addControl(new ol.control.FullScreen());
+      map.addControl(new ol.control.OverviewMap());            
+
 </script>
-  
- 
+
+
 </article>
