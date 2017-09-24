@@ -22,64 +22,59 @@ layout: default
   
   //~~~~~~~~~~~~~~ESTILOS~~~~~~~~~~~~~~~ 
   
-  //PUNTOS EN CATEGORIA
-        var styleFunction = function(capa){
-        if (capa.get('Estatus') === 'Verificado') { strokecolor = '#2177B1';
-      } else if (capa.get('Estatus') === 'No verificado') { strokecolor = '#FFFE01';
-      } else if (capa.get('Estatus') === 'Eliminado') { strokecolor = '#AB0000';
-      } else if (capa.get('Estatus') === 'Nuevo') { strokecolor = '#00AA00';
-      }
-      return[ new ol.style.Style ({
-        image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })]; 
-    };
-
-  //Perimetros
-  var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
-  
-  //Heatmap
-  var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
-  
-  
-      var vectorSource = new ol.source.Vector({
-      format: new ol.format.GeoJSON(),
-      url: '{{ page.mapurl }}'
-      });
-  
-      var vectorLayer = new ol.layer.Vector({
-        source: vectorSource,
-        style: styleFunction
-      });
-  
-      //CARGA DE OSM
+  //MAP TILE
       var map = new ol.Map({
         target: 'map',
         layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
         view: new ol.View({center: ol.proj.fromLonLat([{{ page.lon }}, {{ page.lat }}]), zoom: {{ page.zoom }}})
       });
-  
-      //Declaracion de dirección de url
-      var mapurl= '{{ page.mapurl }}';
-      //Declaracion de Capa GeoJson dentro de interfaz
-      var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )}); //style:styleFunction
-  
+
+  //GEOJSON - URL
+
       // Perimetros A y B    
       var pa= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periA_line.geojson'; 
-      var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson'; 
+      var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson';
+      // Enclaves con markdown
+      var mapurl= '{{ page.mapurl }}';
+
+  //STYLE
+
+      // Estilo de enclave
+      var styleFunction = function(capa){
+          if (capa.get('Estatus') === 'Verificado') { strokecolor = '#2177B1';
+        } else if (capa.get('Estatus') === 'No verificado') { strokecolor = '#FFFE01';
+        } else if (capa.get('Estatus') === 'Eliminado') { strokecolor = '#AB0000';
+        } else if (capa.get('Estatus') === 'Nuevo') { strokecolor = '#00AA00';
+        }
+          return[ new ol.style.Style ({
+            image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })]; 
+      };
+      //Estilo de perimetros
+      var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
   
+  //LAYER COMPOSITION
+
+      //Heatmap
+      var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
+      //Enclaves (before call source)
+      //var vectorSource = new ol.source.Vector({ format: new ol.format.GeoJSON(), url: '{{ page.mapurl }}' });
+      //var capa = new ol.layer.Vector({ source: vectorSource, style: styleFunction });
+      //Declaracion de Capa GeoJson dentro de interfaz
+      var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )});
       var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
       var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});
   
-  //Agrega estilos
-  capa.setStyle(styleFunction);
-  capapb.setStyle(poly);
-  capapa.setStyle(poly);      
+  //SET STYLE
+      capa.setStyle(styleFunction);
+      capapb.setStyle(poly);
+      capapa.setStyle(poly);      
 
   
-  //Agrega GeoJSON a OSM
-  map.addLayer(heatmap);
-  map.addLayer(capapa);
-  map.addLayer(capapb);
-  map.addLayer(capa);
+  //ADD LAYER
+      map.addLayer(heatmap);
+      map.addLayer(capapa);
+      map.addLayer(capapb);
+      map.addLayer(capa);
   
 //~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~ 
 
