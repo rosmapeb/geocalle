@@ -56,10 +56,6 @@ layout: default
 
       //Heatmap
       var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
-      //Enclaves (before call source)
-      //var vectorSource = new ol.source.Vector({ format: new ol.format.GeoJSON(), url: '{{ page.mapurl }}' });
-      //var capa = new ol.layer.Vector({ source: vectorSource, style: styleFunction });
-      //Declaracion de Capa GeoJson dentro de interfaz
       var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )});
       var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
       var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});
@@ -68,7 +64,6 @@ layout: default
       capa.setStyle(styleFunction);
       capapb.setStyle(poly);
       capapa.setStyle(poly);      
-
   
   //ADD LAYER
       map.addLayer(heatmap);
