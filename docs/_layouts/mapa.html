@@ -10,7 +10,7 @@ layout: default
 
 <div id="map" class="map"></div>
 <div id="seleccion" style="margin-top:10px"></div>  
-<div ></div>
+</br>
 <div class="post-content">
     {{ content }}
 </div>  
@@ -84,7 +84,7 @@ seleccion.on('select', function(e) {
   var seleccionados = e.target.getFeatures();
   var html = '';
   seleccionados.forEach(function(t){
-     html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + '</br>' +
+     html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + 
             '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
             '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
             '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
