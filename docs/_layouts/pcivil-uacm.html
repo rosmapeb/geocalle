@@ -39,16 +39,16 @@ layout: default
 
       //Heatmap
       var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mappiro, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
-      var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mappiro, style: styleFunction, format: new ol.format.GeoJSON()} )});
+      var capiro= new ol.layer.Vector({source: new ol.source.Vector({url: mappiro, style: styleFunction, format: new ol.format.GeoJSON()} )});
   
   //SET STYLE
-      capa.setStyle(piro);
+      capiro.setStyle(piro);
      
   
   //ADD LAYER
       map.addLayer(heatmap);
 
-      map.addLayer(capa);
+      map.addLayer(capiro);
   
 //~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~ 
 
