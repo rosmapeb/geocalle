@@ -33,9 +33,9 @@ layout: default
   //STYLE
 
       //Estilo de perimetros
-      var pirostyle = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
+      var pirostyle = new ol.style.Style({ fill: new ol.style.Fill({ color: [203, 194, 185, 1] }) });
   
-  //LAYER COMPOSITION
+  //FUENTE
 
       //Heatmap
       //var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
@@ -58,40 +58,6 @@ map.addControl(new ol.control.OverviewMap());
 
 //~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
 
-var seleccion= new ol.interaction.Select();
-map.addInteraction(seleccion);
-seleccion.on('select', function(e) {
-  //ol.interaction.SelectEvent
-  var div=document.getElementById(
-    'seleccion');
-  var seleccionados = e.target.getFeatures();
-  var html = '';
-  seleccionados.forEach(function(t){
-     html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + 
-            '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
-            '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
-            '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
-            '<strong> DELEGACIÓN:  </strong>' + t.get ('Delegacion') + '</br>' +
-            '<strong> COLONIA: </strong> ' + t.get ('Colonia') +'</br>' +
-            '<strong> ESTATUS: </strong> ' + t.get ('Estatus') + '</br>' +
-            '<strong> OBSERVACIONES:  </strong>' + t.get ('obs')+ '</br>' ;
-    html += '<hr/>';
-  });
-  div.innerHTML=html;
-
-});
-  
 </script>
-  
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-102252368-2', 'auto');
-  ga('send', 'pageview');
-
-</script>  
   
 </article>
