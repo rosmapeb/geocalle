@@ -36,12 +36,11 @@ layout: default
       var pirostyle = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' }) });
 
       var styleFunction = function(capapiro){
-          if (capapiro.get('G_PEL') === 'Alto') { strokecolor = '#997168';
-        } else if (capapiro.get('G_PEL') === 'Moderado') { strokecolor = '##DE8D7A';
-        } else if (capapiro.get('G_PEL') === 'Bajo') { strokecolor = '#997168';
-        } 
-          return[ new ol.style.Style ({
-            image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })];
+          if (capapiro.get('G_PEL') === 'Alto') { strokecolor = '#997168'; } 
+          else if (capapiro.get('G_PEL') === 'Moderado') { strokecolor = '##DE8D7A'; } 
+          else if (capapiro.get('G_PEL') === 'Bajo') { strokecolor = '#997168'; } 
+
+          return[ new ol.style.Style ({ image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })];
         };
 
       //var pirostyle = new ol.style.Style({ fill: new ol.style.Fill({ color: [203, 194, 185, 1] }) });
