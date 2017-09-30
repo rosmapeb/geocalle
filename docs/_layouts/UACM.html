@@ -1,0 +1,114 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+
+
+<div id="map" class="map"></div>
+<div id="seleccion" style="margin-top:10px"></div>  
+</br>
+<div class="post-content">
+    {{ content }}
+</div>  
+<script>
+
+  //~~~~~~~~~~~~~~ESTILOS~~~~~~~~~~~~~~~ 
+  
+  //MAP TILE
+      var map = new ol.Map({
+        target: 'map',
+        layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
+        view: new ol.View({center: ol.proj.fromLonLat([{{ page.lon }}, {{ page.lat }}]), zoom: {{ page.zoom }}})
+      });
+
+  //GEOJSON - URL
+
+      // Perimetros A y B    
+      var pa= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periA_line.geojson'; 
+      var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson';
+      // Enclaves con markdown
+      var mapurl= '{{ page.mapurl }}';
+
+  //STYLE
+
+      // Estilo de enclave
+      var styleFunction = function(capa){
+          if (capa.get('Estatus') === 'Verificado') { strokecolor = '#2177B1';
+        } else if (capa.get('Estatus') === 'No verificado') { strokecolor = '#FFFE01';
+        } else if (capa.get('Estatus') === 'Eliminado') { strokecolor = '#AB0000';
+        } else if (capa.get('Estatus') === 'Nuevo') { strokecolor = '#00AA00';
+        }
+          return[ new ol.style.Style ({
+            image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })]; 
+      };
+      //Estilo de perimetros
+      var poly = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' })  });
+  
+  //LAYER COMPOSITION
+
+      //Heatmap
+      var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
+      var capa= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )});
+      var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
+      var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});
+  
+  //SET STYLE
+      capa.setStyle(styleFunction);
+      capapb.setStyle(poly);
+      capapa.setStyle(poly);      
+  
+  //ADD LAYER
+      map.addLayer(heatmap);
+      map.addLayer(capapa);
+      map.addLayer(capapb);
+      map.addLayer(capa);
+  
+//~~~~~~~~~~~~~~CONTROLES~~~~~~~~~~~~~~~ 
+
+map.addControl(new ol.control.FullScreen());
+map.addControl(new ol.control.OverviewMap());
+
+
+//~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
+
+var seleccion= new ol.interaction.Select();
+map.addInteraction(seleccion);
+seleccion.on('select', function(e) {
+  //ol.interaction.SelectEvent
+  var div=document.getElementById(
+    'seleccion');
+  var seleccionados = e.target.getFeatures();
+  var html = '';
+  seleccionados.forEach(function(t){
+     html +='<strong> <center> DESCRIPCIÓN </center> </strong>' + '</br>' + 
+            '<strong> AÑO DE LEVANTAMIENTO: </strong> ' + t.get('Year') + '</br>' +
+            '<strong> LUGAR: </strong> ' + t.get('Ubicacion') + '</br>' +
+            '<strong> TIPO:  </strong>' + t.get ('Tipopunto') + '</br>' +
+            '<strong> DELEGACIÓN:  </strong>' + t.get ('Delegacion') + '</br>' +
+            '<strong> COLONIA: </strong> ' + t.get ('Colonia') +'</br>' +
+            '<strong> ESTATUS: </strong> ' + t.get ('Estatus') + '</br>' +
+            '<strong> OBSERVACIONES:  </strong>' + t.get ('obs')+ '</br>' ;
+    html += '<hr/>';
+  });
+  div.innerHTML=html;
+
+});
+  
+</script>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102252368-2', 'auto');
+  ga('send', 'pageview');
+
+</script>  
+  
+</article>
