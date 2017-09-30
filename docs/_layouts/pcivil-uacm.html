@@ -33,15 +33,15 @@ layout: default
   //STYLE
 
       //Estilo de perimetros
-      //var pirostyle = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' }) });
+      var pirostyle = new ol.style.Style({ stroke: new ol.style.Stroke({ color:'#1b465a', width: 2, lineCap: 'round' }) });
 
-      var styleFunction = function(capapiro){
-          if (capapiro.get('G_PEL') === 'Alto') { color = '#997168'; } 
-          else if (capapiro.get('G_PEL') === 'Moderado') { color = '#DE8D7A'; } 
-          else if (capapiro.get('G_PEL') === 'Bajo') { color = '#997168'; } 
+      //var styleFunction = function(capapiro){
+        //  if (capapiro.get('G_PEL') === 'Alto') { color = '#997168'; } 
+        //  else if (capapiro.get('G_PEL') === 'Moderado') { color = '#DE8D7A'; } 
+        //  else if (capapiro.get('G_PEL') === 'Bajo') { color = '#997168'; } 
 
-          return[ new ol.style.Style ({ image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })];
-        };
+        //  return[ new ol.style.Style ({ image: new ol.style.Circle({ fill: new ol.style.Fill({color: '#1b465a'}), stroke: new ol.style.Stroke({ color: strokecolor, width: 6 }),radius: 5 }) })];
+        //};
 
       //var pirostyle = new ol.style.Style({ fill: new ol.style.Fill({ color: [203, 194, 185, 1] }) });
   
@@ -49,10 +49,10 @@ layout: default
 
       //Heatmap
       //var heatmap = new ol.layer.Heatmap ({ source: new ol.source.Vector ({ url: mapurl, format: new ol.format.GeoJSON(),}), radius: 24, blur: 50  });
-      var capapiro= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: styleFunction, format: new ol.format.GeoJSON()} )});
+      var capapiro= new ol.layer.Vector({source: new ol.source.Vector({url: mapurl, style: pirostyle, format: new ol.format.GeoJSON()} )});
   
   //SET STYLE
-      capapiro.setStyle(styleFunction);
+      capapiro.setStyle(pirostyle);
      
   
   //ADD LAYER
