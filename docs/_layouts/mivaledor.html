@@ -33,6 +33,8 @@ layout: default
       var isaias= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_isaias.geojson';
       var jose= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_jose-1.geojson';
       var leo= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/mv_name_leo-1.geojson';
+      var pa= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periA_line.geojson'; 
+      var pb= 'https://raw.githubusercontent.com/rosmapeb/geocalle/master/data/periB_line.geojson';
 
 
       //Estilo de MiValedor
@@ -45,6 +47,7 @@ layout: default
     var isaiastyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9d1FLbDNZS190SWM"}) });
     var josestyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9NnVSaC1xTFd6cE0"}) });
     var leostyle = new ol.style.Style({ image: new ol.style.Icon({ scale: 0.25, src: "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9T3NTcWtTWm0tTkk"}) });
+    var poly = new ol.style.Style({ fill: new ol.style.Fill({ color: [203, 194, 185, 1] }) });
 
     // var valestyle = function(capavaledores){
       //  if (capavaledores.get('name') === 'alfredo') { iconovale = "http://drive.google.com/uc?export=view&id=0B3kLXgzsn9e9SXUydl9EWUZINUU";
@@ -70,6 +73,8 @@ layout: default
       var valeisaias= new ol.layer.Vector({source: new ol.source.Vector({url: isaias, style:valestyle ,format: new ol.format.GeoJSON()} )});
       var valejose= new ol.layer.Vector({source: new ol.source.Vector({url: jose, style:valestyle ,format: new ol.format.GeoJSON()} )});
       var valeleo= new ol.layer.Vector({source: new ol.source.Vector({url: leo, style:valestyle ,format: new ol.format.GeoJSON()} )});
+      var capapa= new ol.layer.Vector({source: new ol.source.Vector({url: pa, style:poly, format: new ol.format.GeoJSON()} )});
+      var capapb= new ol.layer.Vector({source: new ol.source.Vector({url: pb, style: poly, format: new ol.format.GeoJSON()} )});  
 
       //Trae estilo
       mivale.setStyle(valestyle);
@@ -80,6 +85,8 @@ layout: default
       valeisaias.setStyle(isaiastyle);
       valejose.setStyle(josestyle);
       valeleo.setStyle(leostyle);
+      capapb.setStyle(poly);
+      capapa.setStyle(poly);  
 
 
       //Trae capa
@@ -91,6 +98,8 @@ layout: default
       map.addLayer(valeisaias);
       map.addLayer(valejose);
       map.addLayer(valeleo);
+      map.addLayer(capapa);
+      map.addLayer(capapb);  
 
       //~~~~~~~~~~~~~~Interaccion capa vectorial~~~~~~~~~~~~~~~
 
